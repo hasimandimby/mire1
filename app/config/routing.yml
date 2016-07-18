@@ -1,0 +1,11 @@
+mire_front:
+    resource: "@MIREFrontBundle/Resources/config/routing.yml"
+    prefix:   /
+
+mire_admin:
+    resource: "@MIREAdminBundle/Resources/config/routing.yml"
+    prefix:   /admin
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

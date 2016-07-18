@@ -1,0 +1,110 @@
+mire_admin_homepage:
+    path:     /
+    defaults: { _controller: MIREAdminBundle:Default:index }
+
+mire_admin_article:
+    path:     /article
+    defaults: { _controller: MIREAdminBundle:Article:index }
+mire_article_add:
+    path:     /article/add
+    defaults: { _controller: MIREAdminBundle:Article:add }
+mire_article_update:
+    path:      /article/update/{id}
+    defaults:  { _controller: MIREAdminBundle:Article:update, id: id  }
+mire_article_delete:
+    path:      /article/delete/{id}
+    defaults:  { _controller: MIREAdminBundle:Article:delete, id: id  }
+
+mire_categories_add:
+    path:     /categories/add
+    defaults: { _controller: MIREAdminBundle:Categories:add }
+mire_categories_edit:
+    path:     /categories/index
+    defaults: { _controller: MIREAdminBundle:Categories:index }
+mire_categories_update:
+    path:      /categories/update/{id}
+    defaults:  { _controller: MIREAdminBundle:Categories:update, id: id  }
+mire_categories_delete:
+    path:      /categories/delete/{id}
+    defaults:  { _controller: MIREAdminBundle:Categories:delete, id: id  }
+
+
+mire_client_add:
+    path:     /client/add
+    defaults: { _controller: MIREAdminBundle:Client:add }
+mire_client_edit:
+    path:     /client/index
+    defaults: { _controller: MIREAdminBundle:Client:index }
+mire_client_update:
+    path:      /client/update/{id}
+    defaults:  { _controller: MIREAdminBundle:Client:update, id: id  }
+mire_client_delete:
+    path:      /client/delete/{id}
+    defaults:  { _controller: MIREAdminBundle:Client:delete, id: id  }
+
+
+mire_page_add:
+    path:     /page/add
+    defaults: { _controller: MIREAdminBundle:Page:add }
+mire_page_edit:
+    path:     /page/index
+    defaults: { _controller: MIREAdminBundle:Page:index }
+mire_page_update:
+    path:      /page/update/{id}
+    defaults:  { _controller: MIREAdminBundle:Page:update, id: id  }
+mire_page_delete:
+    path:      /page/delete/{id}
+    defaults:  { _controller: MIREAdminBundle:Page:delete, id: id  }
+
+mire_abonnement_add:
+    path:     /abonemt/add
+    defaults: { _controller: MIREAdminBundle:Abonemt:add }
+mire_abonnement_edit:
+    path:     /abonemt/index
+    defaults: { _controller: MIREAdminBundle:Abonemt:index }
+mire_abonnement_update:
+    path:      /abonemt/update/{id}
+    defaults:  { _controller: MIREAdminBundle:Abonemt:update, id: id  }
+mire_abonnement_delete:
+    path:      /abonemt/delete/{id}
+    defaults:  { _controller: MIREAdminBundle:Abonemt:delete, id: id  }
+
+mire_pdf_add:
+    path:     /pdf/add
+    defaults: { _controller: MIREAdminBundle:Pdf:add }
+mire_pdf_edit:
+    path:     /pdf/index
+    defaults: { _controller: MIREAdminBundle:Pdf:index }
+mire_pdf_update:
+    path:      /pdf/update/{id}
+    defaults:  { _controller: MIREAdminBundle:Pdf:update, id: id  }
+mire_pdf_delete:
+    path:      /pdf/delete/{id}
+    defaults:  { _controller: MIREAdminBundle:Pdf:delete, id: id  }
+
+mire_log_add:
+    path:     /log/add
+    defaults: { _controller: MIREAdminBundle:Log:add }
+mire_pdf_edit:
+    path:     /log/index
+    defaults: { _controller: MIREAdminBundle:Log:index }
+mire_pdf_update:
+    path:      /log/update/{id}
+    defaults:  { _controller: MIREAdminBundle:Log:update, id: id  }
+mire_pdf_delete:
+    path:      /log/delete/{id}
+    defaults:  { _controller: MIREAdminBundle:Log:delete, id: id  }
+
+
+mire_image_add:
+    path:     /image/add
+    defaults: { _controller: MIREAdminBundle:Image:add }
+mire_image_edit:
+    path:     /image/index
+    defaults: { _controller: MIREAdminBundle:Image:index }
+mire_image_update:
+    path:      /image/update/{id}
+    defaults:  { _controller: MIREAdminBundle:Image:update, id: id  }
+mire_image_delete:
+    path:      /image/delete/{id}
+    defaults:  { _controller: MIREAdminBundle:Image:delete, id: id  }
