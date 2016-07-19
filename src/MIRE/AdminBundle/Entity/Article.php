@@ -17,6 +17,8 @@ class Article
      */
     public function __construct()
     {
+
+        $this->date         = new \Datetime();
         $this->categories = new ArrayCollection();
 
     }
@@ -241,7 +243,7 @@ class Article
      *
      * @return Article
      */
-    public function setImage($image)
+    public function setImageId($image)
     {
         $this->image = $image;
 
@@ -253,7 +255,7 @@ class Article
      *
      * @return integer $image
      */
-    public function getImage()
+    public function getImageId()
     {
         return $this->image;
     }
