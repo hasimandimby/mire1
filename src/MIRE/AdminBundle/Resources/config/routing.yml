@@ -108,3 +108,12 @@ mire_image_update:
 mire_image_delete:
     path:      /image/delete/{id}
     defaults:  { _controller: MIREAdminBundle:Image:delete, id: id  }
+login:
+    path:   /login
+    defaults:  { _controller: MIREAdminBundle:Security:login }
+
+login_check:
+    path:   /login_check
+
+logout:
+    path:   /logout

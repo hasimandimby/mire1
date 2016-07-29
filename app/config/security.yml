@@ -1,23 +1,32 @@
 security:
     firewalls:
+        login:
+            pattern:   ^/admin/login
+            security: false
+        login_check:
+            pattern:   ^/admin/login_check
+            security: false
+        logout:
+            pattern:   ^/admin/logout
+            security: false
         main:
             pattern:   ^/admin
             anonymous: true
             provider:  in_memory
             form_login:
-                login_path: admin/login
+                login_path: login
                 check_path: login_check
             logout:
                 path:   logout
-                target: /platform
+                target: login
         secured_area:
             pattern:    ^/
             anonymous: ~
             http_basic:
                 realm: "Secured Demo Area"
 
-    access_control:
-        - { path: ^/admin, roles: ROLE_ADMIN }
+    #access_control:
+        #- { path: ^/admin, roles: ROLE_ADMIN }
     providers:
         in_memory:
             memory:
