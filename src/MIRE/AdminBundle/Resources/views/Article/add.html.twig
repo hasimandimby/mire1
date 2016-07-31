@@ -1,6 +1,6 @@
-{% extends 'baseh.html.twig' %}
-<h3>Formulaire d'article</h3>
-
+{% extends 'baseadmin.html.twig' %}
+ {% block rigth_content %}
+<h2>Formulaire d'article</h2>
 <div class="well">
     {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
 
@@ -91,3 +91,5 @@
     {# Fermeture de la balise <form> du formulaire HTML #}
     {{ form_end(form) }}
 </div>
+
+ {% endblock %}
