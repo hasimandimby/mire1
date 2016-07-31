@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14fd2774-e5cf-420c-ba2e-8b06ccafa662" name="Default" comment="">
+    <list default="true" id="14fd2774-e5cf-420c-ba2e-8b06ccafa662" name="Default" comment="template  and security">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bundles/admin/js/clockh.js" afterPath="$PROJECT_DIR$/web/bundles/admin/js/clockh.js" />
     </list>
     <ignored path="mire.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,16 +42,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Article.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MIRE/AdminBundle/Entity/Article.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4539">
-              <caret line="268" column="22" selection-start-line="268" selection-start-column="22" selection-end-line="268" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ArticleType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MIRE/AdminBundle/Form/ArticleType.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -82,7 +72,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clockh.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="clockh.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/bundles/admin/js/clockh.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -91,6 +81,16 @@
                 <marker date="1469990686573" expanded="true" signature="856:869" ph="..." />
                 <marker date="1469990686573" expanded="true" signature="915:928" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -146,7 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/MIRE/AdminBundle/Resources/views/Article/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/MIRE/AdminBundle/Resources/views/Article/update.html.twig" />
         <option value="$PROJECT_DIR$/src/MIRE/AdminBundle/Resources/views/Article/delete.html.twig" />
@@ -197,6 +196,7 @@
         <option value="$PROJECT_DIR$/web/bundles/admin/css/niceforms-default.css" />
         <option value="$PROJECT_DIR$/src/AppBundle/AppBundle.php" />
         <option value="$PROJECT_DIR$/web/bundles/admin/js/clockh.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -472,6 +472,7 @@
     <property name="SearchEverywhereHistoryKey" value="term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;termi&#9;ACTION&#9;ActivateTerminalToolWindow&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -562,7 +563,7 @@
       <workItem from="1468555617927" duration="6693000" />
       <workItem from="1469635539076" duration="23705000" />
       <workItem from="1469801996376" duration="20211000" />
-      <workItem from="1469955582839" duration="4659000" />
+      <workItem from="1469955582839" duration="5692000" />
     </task>
     <task id="LOCAL-00001" summary="template  and security">
       <created>1469722835112</created>
@@ -599,11 +600,18 @@
       <option name="project" value="LOCAL" />
       <updated>1469990607100</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="template  and security">
+      <created>1469990700347</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1469990700347</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112818000" />
+    <option name="totallyTimeSpent" value="113851000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -659,13 +667,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/MIRE/AdminBundle/Entity/Page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MIRE/AdminBundle/Entity/Pdf.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1008,6 +1009,14 @@
             <marker date="1469990686573" expanded="true" signature="856:869" ph="..." />
             <marker date="1469990686573" expanded="true" signature="915:928" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
