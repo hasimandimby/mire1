@@ -34,6 +34,11 @@ class Image
      * @ORM\Column(name="alt", type="string", length=255, nullable=true)
      */
     private $alt;
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="alt", type="string", length=255, nullable=true)
+     */
 
 
     /**
@@ -41,6 +46,23 @@ class Image
      *
      * @return int
      */
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="file", type="string", length=255, nullable=true)
+     */
+    private $file;
+
+    public function getFile()
+    {
+        return $this->file;
+    }
+
+    public function setFile(UploadedFile $file = null)
+    {
+        $this->file = $file;
+    }
+
     public function getId()
     {
         return $this->id;
@@ -94,4 +116,3 @@ class Image
         return $this->alt;
     }
 }
-
