@@ -8,7 +8,7 @@
 
 namespace MIRE\AdminBundle\Controller;
 
-use MIRE\AdminBundle\Entity\Categories;
+use MIRE\AdminBundle\Entity\Categoriesp;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class CategoriesController extends Controller
