@@ -14,6 +14,9 @@ mire_article_update:
 mire_article_delete:
     path:      /article/delete/{id}
     defaults:  { _controller: MIREAdminBundle:Article:delete, id: id  }
+mire_article_liste:
+    path:      /article/liste
+    defaults:  { _controller: MIREAdminBundle:Article:liste}
 
 mire_categories_add:
     path:     /categories/add
@@ -27,8 +30,6 @@ mire_categories_update:
 mire_categories_delete:
     path:      /categories/delete/{id}
     defaults:  { _controller: MIREAdminBundle:Categories:delete, id: id  }
-
-
 mire_client_add:
     path:     /client/add
     defaults: { _controller: MIREAdminBundle:Client:add }
