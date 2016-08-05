@@ -70,4 +70,25 @@ class DefaultController extends Controller
     {
         return $this->render('MIREFrontBundle:Default:block10.html.twig');
     }
+    public function gachetteAction()
+    {
+        return $this->render('MIREFrontBundle:Default:gachette.html.twig');
+    }
+    public function sidebarAction()
+    {
+        return $this->render('MIREFrontBundle:Default:sidebar.html.twig');
+    }
+    public function proweekendAction()
+    {
+        return $this->render('MIREFrontBundle:Default:proweekend.html.twig');
+    }
+    public function pubimage2Action()
+    {
+        return $this->render('MIREFrontBundle:Default:pubimage2.html.twig');
+    }
+    public function serviceAction()
+    {
+        return $this->render('MIREFrontBundle:Default:service.html.twig');
+    }
+
 }
