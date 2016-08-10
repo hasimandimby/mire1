@@ -1,7 +1,7 @@
 <?php
 
 namespace MIRE\AdminBundle\Form;
-use  MIRE\AdminBundle\Form\ImageType;
+
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -12,6 +12,7 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
 
 class ArticleType extends AbstractType
 {
@@ -24,7 +25,7 @@ class ArticleType extends AbstractType
 
         $builder
             ->add('date',DateType::class)
-            ->add('image_id',ImageType::class)
+            ->add('image', FileType::class, array('label' => 'Image(JPG or PNG file)'))
             ->add('titre',TextType::class)
             ->add('contenu',TextareaType::class)
             ->add('id_auteur',IntegerType::class)

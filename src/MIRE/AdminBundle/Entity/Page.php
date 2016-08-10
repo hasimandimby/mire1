@@ -125,4 +125,3 @@ class Page
         return $this->contenu;
     }
 }
-
