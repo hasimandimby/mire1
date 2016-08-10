@@ -45,8 +45,8 @@ class Article
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="image", type="string", length=250, nullable=true)
+     * @Assert\File( maxSize = "3072k", mimeTypesMessage = "Please upload a valid Image")
+     * @ORM\Column(name="image", type="string", length=245, nullable=false)
      */
     private $image;
 
