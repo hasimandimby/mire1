@@ -125,4 +125,3 @@ class Log
         return $this->dateTelechargement;
     }
 }
-

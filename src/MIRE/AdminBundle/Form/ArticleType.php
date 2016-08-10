@@ -24,7 +24,7 @@ class ArticleType extends AbstractType
 
         $builder
             ->add('date',DateType::class)
-            ->add('image_id',ImageType::class)
+            ->add('file')
             ->add('titre',TextType::class)
             ->add('contenu',TextareaType::class)
             ->add('id_auteur',IntegerType::class)

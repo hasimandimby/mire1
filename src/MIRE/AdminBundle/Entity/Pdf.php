@@ -94,4 +94,3 @@ class Pdf
         return $this->datePublication;
     }
 }
-
