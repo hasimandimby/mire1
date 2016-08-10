@@ -1,0 +1,13 @@
+#header{}
+#wrapper{}
+#footer{}
+.wrap { margin: 0 auto;max-width: 1024px;}
+img { max-width: 100%; height: auto;}
+
+
+
+/*FLOATS*/
+
+/*CLEARING FlOAT*/
+.wrap:after,
+.clear { display: block; clear: both; content: ''; height: 0; font-size: 0;}
