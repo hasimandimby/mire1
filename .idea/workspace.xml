@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14fd2774-e5cf-420c-ba2e-8b06ccafa662" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MIRE/AdminBundle/Form/ImageType.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/AdminBundle/Entity/Article.php" afterPath="$PROJECT_DIR$/src/MIRE/AdminBundle/Entity/Article.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/AdminBundle/Form/ArticleType.php" afterPath="$PROJECT_DIR$/src/MIRE/AdminBundle/Form/ArticleType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/AdminBundle/Resources/views/Article/add.html.twig" afterPath="$PROJECT_DIR$/src/MIRE/AdminBundle/Resources/views/Article/add.html.twig" />
     </list>
     <ignored path="mire.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,8 +44,8 @@
       <file leaf-file-name="ArticleType.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MIRE/AdminBundle/Form/ArticleType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="25" column="16" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="16" />
+            <state relative-caret-position="221">
+              <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
               <folding>
                 <element signature="e#42#82#0#PHP" expanded="true" />
               </folding>
@@ -586,7 +582,7 @@
       <workItem from="1469955582839" duration="11266000" />
       <workItem from="1470411774387" duration="1789000" />
       <workItem from="1470816144355" duration="1374000" />
-      <workItem from="1470832155235" duration="4774000" />
+      <workItem from="1470832155235" duration="4787000" />
     </task>
     <task id="LOCAL-00001" summary="template  and security">
       <created>1469722835112</created>
@@ -672,11 +668,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470836727334</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="template">
+      <created>1470839589502</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1470839589502</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127362000" />
+    <option name="totallyTimeSpent" value="127375000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1079,8 +1082,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MIRE/AdminBundle/Form/ArticleType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="16" />
+        <state relative-caret-position="221">
+          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
           <folding>
             <element signature="e#42#82#0#PHP" expanded="true" />
           </folding>
