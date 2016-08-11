@@ -1,6 +1,8 @@
 <?php
 
 namespace MIRE\FrontBundle\Controller;
+use MIRE\AdminBundle\Entity\Categories;
+use \MIRE\AdminBundle\Entity\Article;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -28,7 +30,10 @@ class DefaultController extends Controller
     }
     public function menuAction()
     {
-        return $this->render('MIREFrontBundle:Default:blockmenu.html.twig');
+        $em = $this->getDoctrine()->getEntityManager();
+        $categories = $em->getRepository("MIREAdminBundle:Categories")->findAll();
+
+        return $this->render('MIREFrontBundle:Default:blockmenu.html.twig',array('categories' => $categories));
     }
     public function block1Action()
     {
@@ -40,7 +45,12 @@ class DefaultController extends Controller
     }
     public function block3Action()
     {
-        return $this->render('MIREFrontBundle:Default:block3.html.twig');
+        $em = $this->getDoctrine()->getEntityManager();
+        //$articlesblock3 = $em->getRepository("MIREAdminBundle:Article")->findAll();
+        $articlesblock3 = $em->getRepository("MIREAdminBundle:Article")->findByPlace(3);
+        $articlesblock3big = $em->getRepository("MIREAdminBundle:Article")->findByPlaceLast(3);
+
+        return $this->render('MIREFrontBundle:Default:block3.html.twig',array('articlesblock3' => $articlesblock3 , 'articlesblock3big' => $articlesblock3big));
     } 
     public function block4Action()
     {
