@@ -21,8 +21,8 @@ mire_article_liste:
 mire_categories_add:
     path:     /categories/add
     defaults: { _controller: MIREAdminBundle:Categories:add }
-mire_categories_edit:
-    path:     /categories/index
+mire_categories_liste:
+    path:     /categories/
     defaults: { _controller: MIREAdminBundle:Categories:index }
 mire_categories_update:
     path:      /categories/update/{id}

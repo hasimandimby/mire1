@@ -3,7 +3,6 @@
 namespace MIRE\AdminBundle\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * Article
@@ -42,14 +41,17 @@ class Article
      * @ORM\Column(name="titre", type="string", length=250, nullable=true)
      */
     private $titre;
-
     /**
-     * @var string
-     * @Assert\File( maxSize = "3072k", mimeTypesMessage = "Please upload a valid Image")
-     * @ORM\Column(name="image", type="string", length=245, nullable=false)
+     * @ORM\OneToOne(targetEntity="MIRE\AdminBundle\Entity\Image", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=false)
      */
     private $image;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="date", type="date",  nullable=true)
+     */
     private $date;
 
     /**
@@ -234,6 +236,30 @@ class Article
         return $this->published;
     }
 
+    /**
+     * Set image
+     *
+     * @param integer $image
+     *
+     * @return Article
+     */
+    public function setImageId($image)
+    {
+        $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * Get image
+     *
+     * @return integer $image
+     */
+    public function getImageId()
+    {
+        return $this->image;
+    }
+
 
     /**
      * Add category
@@ -257,40 +283,5 @@ class Article
     public function removeCategory(\MIRE\AdminBundle\Entity\Categories $category)
     {
         $this->categories->removeElement($category);
-    }
-
-
-    /**
-     * Get categories
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getCategories()
-    {
-        return $this->categories;
-    }
-
-    /**
-     * Set image
-     *
-     * @param string $image
-     *
-     * @return Article
-     */
-    public function setImage(UploadedFile $image = null)
-    {
-        $this->image = $image;
-
-        return $this;
-    }
-
-    /**
-     * Get image
-     *
-     * @return string
-     */
-    public function getImage()
-    {
-        return $this->image;
     }
 }

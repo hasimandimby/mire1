@@ -20,8 +20,11 @@ class CategoriesType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            -> add('ordre',IntegerType::class)
             -> add('nom',TextType::class)
+            -> add('ordre',IntegerType::class)
+            -> add('place',IntegerType::class)
+            ->add('save',SubmitType::class, array('label' => 'Ajouter'))
+
         ;
     }
     
