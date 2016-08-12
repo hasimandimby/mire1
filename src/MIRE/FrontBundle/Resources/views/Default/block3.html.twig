@@ -1,13 +1,19 @@
 <div id="colorcontentblock">
-    <div id="colorcontenth3_small" class="custom3"><a href="#" title="">La cible</a></div>
+    <div id="colorcontenth3_small" class="custom3"><a href="#" title="">
+            {% for c in categorieblock3 %}
+                {{ c.nom }}
+            {% endfor %}
 
+        </a></div>
+    {{ dump(articlesblock3) }}
+    {% for article in  articlesblock3 %}
     <div id="colorcontentwrap3">
-        <h2><a href="#" rel="bookmark">A Lesson From the World&#8217;s Richest People</a></h2>
+        <h2><a href="#" rel="bookmark">{{ article.titre }}</a></h2>
         <a href="#"><img width="173" height="137" src="{{ asset('bundles/front/images/A-Lesson-From-the-Worlds-Richest-People-173x137.jpg')}}" class="attachment-colorcontentblock3 " alt="" /></a>
         <p>One of the most fascinating elements of Switzerland&#8217;s success is its determination to remain neutral under unimaginable&nbsp;<a href='#'>More...</a></p>
         <div class="cb"></div>
     </div>
-
+    {% endfor %}
     <div id="colorcontentwrap3">
         <h2><a href="#" rel="bookmark">Are Entrepreneurs Born or Taught?</a></h2>
 

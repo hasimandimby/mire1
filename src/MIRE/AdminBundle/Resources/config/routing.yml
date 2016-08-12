@@ -47,8 +47,8 @@ mire_client_delete:
 mire_page_add:
     path:     /page/add
     defaults: { _controller: MIREAdminBundle:Page:add }
-mire_page_edit:
-    path:     /page/index
+mire_page_liste:
+    path:     /page
     defaults: { _controller: MIREAdminBundle:Page:index }
 mire_page_update:
     path:      /page/update/{id}

@@ -48,9 +48,11 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getEntityManager();
         //$articlesblock3 = $em->getRepository("MIREAdminBundle:Article")->findAll();
         $articlesblock3 = $em->getRepository("MIREAdminBundle:Article")->findByPlace(3);
-        $articlesblock3big = $em->getRepository("MIREAdminBundle:Article")->findByPlaceLast(3);
+        //$articlesblock3 = $em->getRepository("MIREAdminBundle:Article")->testCode();
+       // $articlesblock3big = $em->getRepository("MIREAdminBundle:Article")->findByPlaceLast(3);
+        $categorieblock3 = $em->getRepository("MIREAdminBundle:Categories")->findBy(array("place"=>3));
 
-        return $this->render('MIREFrontBundle:Default:block3.html.twig',array('articlesblock3' => $articlesblock3 , 'articlesblock3big' => $articlesblock3big));
+        return $this->render('MIREFrontBundle:Default:block3.html.twig',array('categorieblock3' => $categorieblock3 ,'articlesblock3' => $articlesblock3 , ));
     } 
     public function block4Action()
     {
