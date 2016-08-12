@@ -1,22 +1,10 @@
 <ul>
     <div class="menu-header">
         <ul id="menu-menu" class="menu">
-            <li><a href="#" title="">Accueil</a></li>
-            <li><a href="#" title="">La une</a>
-                <ul class="sub-menu">
-                    <li><a href="#" title="">Sousmenu1</a></li>
-                    <li><a href="#" title="">Soumenu2</a></li>
-                </ul>
-            </li>
-            <li><a href="#" title="">Politique</a></li>
-            <li><a href="#" title="">Econimie</a></li>
-            <li><a href="#" title="">Société</a></li>
-            <li><a href="#" title="">Culture</a></li>
-            <li><a href="#" title="">Sport</a></li>
-            <li><a href="#" title="">Malagasy</a></li>
-            <li><a href="#" title="">Gachette facile</a></li>
-            <li><a href="#" title="">Contact</a></li>
-            <li><a href="#" title="">Abonnez-vous</a></li>
+            {% for categorie in categories %}
+                <li><a href="#" title="">{{ categorie.nom }}</a></li>
+            {% endfor %}
+
         </ul>
         <div class="cb"></div>
     </div>

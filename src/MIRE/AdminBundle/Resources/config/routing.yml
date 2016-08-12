@@ -21,8 +21,8 @@ mire_article_liste:
 mire_categories_add:
     path:     /categories/add
     defaults: { _controller: MIREAdminBundle:Categories:add }
-mire_categories_edit:
-    path:     /categories/index
+mire_categories_liste:
+    path:     /categories/
     defaults: { _controller: MIREAdminBundle:Categories:index }
 mire_categories_update:
     path:      /categories/update/{id}
@@ -47,8 +47,8 @@ mire_client_delete:
 mire_page_add:
     path:     /page/add
     defaults: { _controller: MIREAdminBundle:Page:add }
-mire_page_edit:
-    path:     /page/index
+mire_page_liste:
+    path:     /page
     defaults: { _controller: MIREAdminBundle:Page:index }
 mire_page_update:
     path:      /page/update/{id}

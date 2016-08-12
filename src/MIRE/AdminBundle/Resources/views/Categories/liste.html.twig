@@ -6,6 +6,8 @@
          <tr>
              <th scope="col" class="rounded-company">Publier</th>
              <th scope="col" class="rounded">Titre</th>
+             <th scope="col" class="rounded">Categorie</th>
+             <th scope="col" class="rounded">Date d'edition</th>
              <th scope="col" class="rounded">Auteur</th>
              <th scope="col" class="rounded">Edit</th>
              <th scope="col" class="rounded-q4">Delete</th>
@@ -19,13 +21,16 @@
          </tr>
          </tfoot>
          <tbody>
-         {% for page in pages %}
+         {% for article in articles %}
              <tr>
                  <td><input type="checkbox" name=""></td>
-                 <td>{{ page.titre }}</td>
+                 <td>{{ article.titre }}</td>
+                 <td>categorie</td>
                  <td></td>
-                 <td><a href="{{ path('mire_page_update', {'id': page.id }) }}"><img src="{{ asset('bundles/admin/images/user_edit.png')}}" alt="" title="" border="0"></a></td>
-                 <td><a href="{{ path('mire_page_delete', {'id': page.id }) }}" class="ask"><img src="{{ asset('bundles/admin/images/trash.png')}}" alt="" title="" border="0"></a></td>
+                 <td>Auteur</td>
+
+                 <td><a href="{{ path('mire_article_update', {'id': article.id }) }}"><img src="{{ asset('bundles/admin/images/user_edit.png')}}" alt="" title="" border="0"></a></td>
+                 <td><a href="{{ path('mire_article_delete', {'id': article.id }) }}" class="ask"><img src="{{ asset('bundles/admin/images/trash.png')}}" alt="" title="" border="0"></a></td>
              </tr>
          {% endfor %}
 

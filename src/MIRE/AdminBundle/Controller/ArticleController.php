@@ -39,7 +39,7 @@ class ArticleController extends Controller
             $em->flush();
             $request->getSession()->getFlashBag()->add('notice', 'Article bien enregistrée.');
 
-            //return $this->redirect($this->generateUrl('mire_article_update', array('id' => $article->getId())));
+            return $this->redirect($this->generateUrl('mire_article_liste'));
         }
 
         return $this->render('MIREAdminBundle:Article:add.html.twig', array('form' => $form->createView(),));
@@ -47,7 +47,7 @@ class ArticleController extends Controller
 
 
 
-        public function updateAction($id , Request $request)
+    public function updateAction($id , Request $request)
     {
             $article = $this->getDoctrine()
             ->getManager()
@@ -71,7 +71,14 @@ class ArticleController extends Controller
     }
     public function deleteAction($id)
     {
-        return $this->render('MIREAdminBundle:Article:delete.html.twig', array('id' => $id ));
+        $em = $this->getDoctrine()
+            ->getManager();
+        $article = $em ->getRepository('MIREAdminBundle:Article')
+            ->find($id);
+        $em->remove($article);
+        $em->flush();
+        return $this->redirect($this->generateUrl('mire_article_liste'));
+
     }
     public function listeAction()
     {

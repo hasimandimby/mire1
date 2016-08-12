@@ -1,6 +1,7 @@
 <?php
 
 namespace MIRE\AdminBundle\Repository;
+use MIRE\AdminBundle\Entity\Article;
 
 /**
  * ArticleRepository
@@ -10,4 +11,28 @@ namespace MIRE\AdminBundle\Repository;
  */
 class ArticleRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function findByCategorie($categorie_id)
+    {
+        $a = new Article();
+        $query  = $this->_em->createQuery('SELECT a FROM MIRE\AdminBundle\Entity\Article a JOIN a.categories c WHERE c.id = :id ORDER BY a.id');
+        $query->setParameter('id',$categorie_id);
+        return $query->getResult();
+    }
+    public function findByPlace($place_num)
+    {
+        $query  = $this->_em->createQuery('SELECT a FROM MIRE\AdminBundle\Entity\Article a JOIN a.categories c WHERE c.place = :place  ORDER BY a.id');
+        $query->setParameter('place',$place_num);
+        return $query->getResult();
+    }
+    public function findByPlaceLast($place_num)
+    {
+        $query  = $this->_em->createQuery('SELECT a FROM MIRE\AdminBundle\Entity\Article a JOIN a.categories c WHERE c.place = :place  ORDER BY a.id');
+        $query->setParameter('place',$place_num);
+        return $query->setMaxResults(1)->getSingleResult();
+    }
+    public function testCode()
+    {
+        $query  = $this->_em->createQuery('SELECT a FROM MIRE\AdminBundle\Entity\Article a');
+        return $query->getResult();
+    }
 }

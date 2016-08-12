@@ -27,6 +27,33 @@ class Categories
      * @ORM\Column(name="ordre", type="string", length=255,nullable=true)
      */
     private $ordre;
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="place", type="string", length=255,nullable=true)
+     */
+    private $place;
+
+    /**
+     * @return string
+     */
+    public function getPlace()
+    {
+        return $this->place;
+    }
+
+    /**
+     * @ORM\ManyToMany(targetEntity="Article", cascade={"persist"})
+     */
+    private $articles ;
+
+    /**
+     * @param string $place
+     */
+    public function setPlace($place)
+    {
+        $this->place = $place;
+    }
 
     /**
      * @var string
@@ -47,6 +74,14 @@ class Categories
     }
 
     /**
+     * @return mixed
+     */
+    public function getArticles()
+    {
+        return $this->articles;
+    }
+
+    /**
      * Set ordre
      *
      * @param string $ordre
@@ -56,8 +91,6 @@ class Categories
     public function setOrdre($ordre)
     {
         $this->ordre = $ordre;
-
-        return $this;
     }
 
     /**

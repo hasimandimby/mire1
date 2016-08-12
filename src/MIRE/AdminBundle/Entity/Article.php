@@ -4,7 +4,6 @@ namespace MIRE\AdminBundle\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
-use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Article
@@ -293,80 +292,4 @@ class Article
     {
         return $this->image;
     }
-
-    private $tempFilename;
-    /**
-     * Called before saving the entity
-     *
-     * @ORM\PrePersist()
-     * @ORM\PreUpdate()
-     */
-    public function preUpload()
-    {
-        if (null !== $this->image) {
-            // do whatever you want to generate a unique name
-            $filename = sha1(uniqid(mt_rand(), true));
-            $this->image = $filename.'.'.$this->image->guessExtension();
-        }
-    }
-
-    public function upload()
-    {
-        // The file property can be empty if the field is not required
-        if (null === $this->image) {
-            return;
-        }
-
-        // Use the original file name here but you should
-        // sanitize it at least to avoid any security issues
-
-        // move takes the target directory and then the
-        // target filename to move to
-        $this->image->move(
-            $this->getUploadRootDir(),
-            $this->image
-        );
-
-        // Set the path property to the filename where you've saved the file
-        //$this->path = $this->file->getClientOriginalName();
-
-        // Clean up the file property as you won't need it anymore
-        $this->file = null;
-    }
-
-    /**
-     * @ORM\PreRemove()
-     */
-    public function preRemoveUpload()
-    {
-        // On sauvegarde temporairement le nom du fichier, car il dépend de l'id
-        $this->tempFilename = $this->getUploadRootDir().'/'.$this->id.'.'.$this->image;
-    }
-
-    /**
-     * @ORM\PostRemove()
-     */
-    public function removeUpload()
-    {
-        // En PostRemove, on n'a pas accès à l'id, on utilise notre nom sauvegardé
-        if (file_exists($this->tempFilename)) {
-            // On supprime le fichier
-            unlink($this->tempFilename);
-        }
-    }
-
-    
-    public function getUploadDir()
-    {
-        // On retourne le chemin relatif vers l'image pour un navigateur
-        return 'uploads/img';
-    }
-
-    protected function getUploadRootDir()
-    {
-        // On retourne le chemin relatif vers l'image pour notre code PHP
-        return __DIR__.'/../../../../web/'.$this->getUploadDir();
-    }
-
-    // …
 }
