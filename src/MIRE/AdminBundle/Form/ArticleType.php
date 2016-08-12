@@ -22,7 +22,6 @@ class ArticleType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-
         $builder
             ->add('date',DateType::class)
             ->add('image', FileType::class, array('label' => 'Image(JPG or PNG file)'))
