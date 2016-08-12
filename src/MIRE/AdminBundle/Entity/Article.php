@@ -355,6 +355,7 @@ class Article
         }
     }
 
+    
     public function getUploadDir()
     {
         // On retourne le chemin relatif vers l'image pour un navigateur

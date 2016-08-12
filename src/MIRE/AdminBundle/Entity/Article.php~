@@ -13,6 +13,17 @@ use Doctrine\ORM\Mapping as ORM;
 class Article
 {
     /**
+     * Constructor
+     */
+    public function __construct()
+    {
+
+        $this->date         = new \Datetime();
+        $this->categories = new ArrayCollection();
+
+    }
+
+    /**
      * @var int
      *
      * @ORM\Column(name="id", type="integer")
@@ -30,17 +41,14 @@ class Article
      * @ORM\Column(name="titre", type="string", length=250, nullable=true)
      */
     private $titre;
-    /**
-     * @ORM\OneToOne(targetEntity="MIRE\AdminBundle\Entity\Image", cascade={"persist"})
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $image;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="date", type="date",  nullable=true)
+     * @ORM\Column(name="image", type="string", length=250, nullable=true)
      */
+    private $image;
+
     private $date;
 
     /**
@@ -53,7 +61,7 @@ class Article
     /**
      * @ORM\ManyToMany(targetEntity="Categories", cascade={"persist"})
      */
-    private $categories;
+    private $categories ;
 
     /**
      * @var string
@@ -152,29 +160,6 @@ class Article
         return $this->idAuteur;
     }
 
-    /**
-     * Set categories
-     *
-     * @param integer $categories
-     *
-     * @return Article
-     */
-    public function setCategories($categories)
-    {
-        $this->categories = $categories;
-
-        return $this;
-    }
-
-    /**
-     * Get categories
-     *
-     * @return int
-     */
-    public function getCategories()
-    {
-        return $this->categories;
-    }
 
     /**
      * Set contenu
@@ -248,37 +233,6 @@ class Article
         return $this->published;
     }
 
-    /**
-     * Set image
-     *
-     * @param integer $image
-     *
-     * @return Article
-     */
-    public function setImage($image)
-    {
-        $this->image = $image;
-
-        return $this;
-    }
-
-    /**
-     * Get image
-     *
-     * @return integer $image
-     */
-    public function getImage()
-    {
-        return $this->image;
-    }
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->categories = new \Doctrine\Common\Collections\ArrayCollection();
-    }
-
 
     /**
      * Add category
@@ -302,5 +256,16 @@ class Article
     public function removeCategory(\MIRE\AdminBundle\Entity\Categories $category)
     {
         $this->categories->removeElement($category);
+    }
+
+
+    /**
+     * Get categories
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getCategories()
+    {
+        return $this->categories;
     }
 }
