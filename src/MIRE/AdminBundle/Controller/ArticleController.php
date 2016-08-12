@@ -31,7 +31,9 @@ class ArticleController extends Controller
 
         $article = new Article();
         $form = $this->createForm(ArticleType::class, $article);
+
         if ($form->handleRequest($request)->isValid()) {
+            $article->upload();
             $em = $this->getDoctrine()->getManager();
             $em->persist($article);
             $em->flush();
