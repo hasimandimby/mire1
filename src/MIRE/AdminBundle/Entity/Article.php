@@ -50,7 +50,6 @@ class Article
      * @ORM\Column(name="image", type="string", length=245, nullable=false)
      */
     private $image;
-hh
     private $date;
 
     /**
