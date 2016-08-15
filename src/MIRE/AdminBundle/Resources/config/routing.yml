@@ -73,7 +73,7 @@ mire_abonnement_delete:
 mire_pdf_add:
     path:     /pdf/add
     defaults: { _controller: MIREAdminBundle:Pdf:add }
-mire_pdf_edit:
+mire_pdf_liste:
     path:     /pdf/index
     defaults: { _controller: MIREAdminBundle:Pdf:index }
 mire_pdf_update:
@@ -86,13 +86,13 @@ mire_pdf_delete:
 mire_log_add:
     path:     /log/add
     defaults: { _controller: MIREAdminBundle:Log:add }
-mire_pdf_edit:
+mire_log_edit:
     path:     /log/index
     defaults: { _controller: MIREAdminBundle:Log:index }
-mire_pdf_update:
+mire_log_update:
     path:      /log/update/{id}
     defaults:  { _controller: MIREAdminBundle:Log:update, id: id  }
-mire_pdf_delete:
+mire_log_delete:
     path:      /log/delete/{id}
     defaults:  { _controller: MIREAdminBundle:Log:delete, id: id  }
 

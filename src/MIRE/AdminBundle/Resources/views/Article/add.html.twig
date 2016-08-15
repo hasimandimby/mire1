@@ -2,7 +2,7 @@
  {% block rigth_content %}
 <h2>Formulaire d'article</h2>
 <div class="well">
-    {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+    {{ form_start(form, {'attr': {'class': 'form-horizontal','novalidate': 'novalidate'}}) }}
 
     {# Les erreurs générales du formulaire. #}
     {{ form_errors(form) }}
@@ -16,6 +16,18 @@
         <div class="col-sm-4">
             {# Génération de l'input. #}
             {{ form_widget(form.date, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+    <div class="form-group">
+        {# Génération du label. #}
+        {{ form_label(form.categories, "Categorie", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+        {# Affichage des erreurs pour ce champ précis. #}
+        {{ form_errors(form.categories) }}
+
+        <div class="col-sm-4">
+            {# Génération de l'input. #}
+            {{ form_widget(form.categories, {'attr': {'class': 'form-control'}}) }}
         </div>
     </div>
 
@@ -66,14 +78,14 @@
     </div>
      <div class="form-group">
         {# Génération du label. #}
-        {{ form_label(form.image, "Image à la une", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+        {{ form_label(form.imagefile, "Image à la une", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
 
         {# Affichage des erreurs pour ce champ précis. #}
-        {{ form_errors(form.image) }}
+        {{ form_errors(form.imagefile) }}
 
         <div class="col-sm-4">
             {# Génération de l'input. #}
-            {{ form_widget(form.image, {'attr': {'class': 'form-control'}}) }}
+            {{ form_widget(form.imagefile, {'attr': {'class': 'form-control'}}) }}
         </div>
     </div>
     <div class="form-group">

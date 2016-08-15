@@ -1,0 +1,130 @@
+
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>	<meta charset="UTF-8" />
+    <!-- Mobile Specific Metas-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title> Ligne de mire </title>
+    <meta name="keywords" content=""/>
+    <link rel="stylesheet" href="{{ asset('bundles/front/css/style.css')}}" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="{{ asset('bundles/front/css/responsives.css')}}" type="text/css" media="screen"/>
+    <link rel="shortcut icon" href=""/>
+    <link rel="shortcut icon" href="" type="image/x-icon"/>
+    <meta name="generator" content="Magazine3 Framework" />
+    <!--[if IE]><script src="{{ asset('bundles/front/scripts/html5shiv.min.js')}}"></script><![endif]-->
+    <script type='text/javascript' src='{{ asset('bundles/front/scripts/jquery.min.js')}}'></script>
+    <script type='text/javascript' src='{{ asset('bundles/front/scripts/slides.min.jquery.js')}}'></script>
+    <script type='text/javascript' src='{{ asset('bundles/front/scripts/ticker.js')}}'></script>
+    <script type='text/javascript' src='{{ asset('bundles/front/scripts/scripts.js')}}'></script>
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <div id="header2">
+            <div id="logoleft"><a href="#"><img src="{{ asset('bundles/front/images/LDM-Logo-def.jpg')}}" alt="" /></a></div>
+            <div id="logoright">
+                <div id="topheaderbar-l"><a href="#">Télécharger version Pdf</a></div>
+                <div id="topheaderbar-r">Monday 20 June, 2016</div>
+                <div class="cb"><br/></div>
+                <div class="pub">
+                    <img src="{{ asset('bundles/front/images/pub.gif')}}" alt=""/>
+                </div>
+            </div>
+            <div class="cb"></div>
+        </div>
+        <div id="header3">
+            <div id="header3-1">
+                <div id="header3-1-left">
+                    <div id="header3-1-left-ticker">
+                        {% block filinfo %}
+                        {% endblock %}
+
+                    </div>
+                    <div class="cb"></div>
+                </div>
+                <div id="header3-1-right">
+                    <ul>
+                        <li><a href="#" target="_blank"><img src="{{ asset('bundles/front/images/social/rss.png')}}" alt="" /></a></li>
+                        <li><a href="#" target="_blank"><img src="{{ asset('bundles/front/images/social/email.png')}}" alt="" /></a></li>
+                        <li><a href="#" target="_blank"><img src="{{ asset('bundles/front/images/social/digg.png')}}" alt="" /></a></li>
+                        <li><a href="#" target="_blank"><img src="{{ asset('bundles/front/images/social/facebook.png')}}" alt="" /></a> </li>
+                        <li><a href="#" target="_blank"><img src="{{ asset('bundles/front/images/social/flickr.png')}}" alt="" /></a> </li>
+                        <li><a href="#" target="_blank"><img src="{{ asset('bundles/front/images/social/lastfm.png')}}" alt="" /></a> </li>
+                        <li><a href="#" target="_blank"><img src="{{ asset('bundles/front/images/social/linkedin.png')}}" alt="" /></a> </li>
+                        <li><a href="#" target="_blank"><img src="{{ asset('bundles/front/images/social/twitter.png')}}" alt="" /></a> </li>
+                        <li><a href="#" target="_blank"><img src="{{ asset('bundles/front/images/social/stumbleupon.png')}}" alt="" /></a> </li>
+                    </ul>
+                </div>
+                <div class="cb"></div>
+            </div>
+            <div id="header3-2">
+                <div id="menu2">
+                    {% block menu %}
+                    {% endblock %}
+                </div>
+                <nav id="mobile-menu" role="navigation"></nav>
+                <div class="cb"></div>
+            </div>
+        </div>
+        <div id="section">
+
+
+            <!--Page contenue-->
+
+            <div id="column-wrap">
+                <div id="main-content">
+                    <div id="inside">
+                        <div id="content" >
+                            {% block content %}
+                            {% endblock %}
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div id="aside">
+                    {% block gachette %}
+                        {{ render(controller("MIREFrontBundle:Default:gachette")) }}
+                    {% endblock %}
+                    {% block sidebar %}
+                        {{ render(controller("MIREFrontBundle:Default:sidebar")) }}
+
+                    {% endblock %}
+                </div>
+
+            </div>
+        </div>
+        <!--Page contenue-->
+    </div>
+
+    <div id="footer">
+        <div id="footer1">
+            <div id="footerwrapper1">
+                <div id="sidebar1">
+                    <img src="{{ asset('bundles/front/images/pub-07.jpg')}}" alt=""/>
+                </div>
+                <div id="sidebar2">
+                    <h2>La ligne de mire</h2>
+                    <ul>
+                        <li><a href="#">A propos de nous</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                        <li><a href="#">Rédaction</a></li>
+                        <li><a href="#">Règle publicitaire</a></li>
+                        <li><a href="#">Archives</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="cb"> </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+</div>
+
+
+</body>
+</html>

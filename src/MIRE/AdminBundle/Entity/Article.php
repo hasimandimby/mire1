@@ -45,11 +45,36 @@ class Article
     private $titre;
 
     /**
+     * @Assert\File( maxSize = "3072k", mimeTypesMessage = "Please upload a valid imagefile")
+     */
+    private $imagefile;
+
+    /**
      * @var string
-     * @Assert\File( maxSize = "3072k", mimeTypesMessage = "Please upload a valid Image")
      * @ORM\Column(name="image", type="string", length=245, nullable=false)
      */
     private $image;
+
+    /**
+     * @return string
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param string $image
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+    }
+
+    /**
+     * @var \Datetime
+     * @ORM\Column(name="date", type="datetime", length=250, nullable=true)
+     */
     private $date;
 
     /**
@@ -271,27 +296,27 @@ class Article
     }
 
     /**
-     * Set image
+     * Set imagefile
      *
-     * @param string $image
+     * @param string $imagefile
      *
      * @return Article
      */
-    public function setImage(UploadedFile $image = null)
+    public function setimagefile(UploadedFile $imagefile = null)
     {
-        $this->image = $image;
+        $this->imagefile = $imagefile;
 
         return $this;
     }
 
     /**
-     * Get image
+     * Get imagefile
      *
      * @return string
      */
-    public function getImage()
+    public function getimagefile()
     {
-        return $this->image;
+        return $this->imagefile;
     }
 
     private $tempFilename;
@@ -303,17 +328,17 @@ class Article
      */
     public function preUpload()
     {
-        if (null !== $this->image) {
+        if (null !== $this->imagefile) {
             // do whatever you want to generate a unique name
             $filename = sha1(uniqid(mt_rand(), true));
-            $this->image = $filename.'.'.$this->image->guessExtension();
+            $this->imagefile = $filename.'.'.$this->imagefile->guessExtension();
         }
     }
 
     public function upload()
     {
         // The file property can be empty if the field is not required
-        if (null === $this->image) {
+        if (null === $this->imagefile) {
             return;
         }
 
@@ -322,16 +347,16 @@ class Article
 
         // move takes the target directory and then the
         // target filename to move to
-        $this->image->move(
+        $this->imagefile->move(
             $this->getUploadRootDir(),
-            $this->image
+            $this->imagefile->getClientOriginalName()
         );
-
+        $this->image = $this->imagefile->getClientOriginalName();
         // Set the path property to the filename where you've saved the file
         //$this->path = $this->file->getClientOriginalName();
 
         // Clean up the file property as you won't need it anymore
-        $this->file = null;
+        $this->imagefile = null;
     }
 
     /**
@@ -340,7 +365,7 @@ class Article
     public function preRemoveUpload()
     {
         // On sauvegarde temporairement le nom du fichier, car il dépend de l'id
-        $this->tempFilename = $this->getUploadRootDir().'/'.$this->id.'.'.$this->image;
+        $this->tempFilename = $this->getUploadRootDir().'/'.$this->id.'.'.$this->imagefile;
     }
 
     /**
@@ -355,16 +380,15 @@ class Article
         }
     }
 
-
     public function getUploadDir()
     {
-        // On retourne le chemin relatif vers l'image pour un navigateur
+        // On retourne le chemin relatif vers l'imagefile pour un navigateur
         return 'uploads/img';
     }
 
     protected function getUploadRootDir()
     {
-        // On retourne le chemin relatif vers l'image pour notre code PHP
+        // On retourne le chemin relatif vers l'imagefile pour notre code PHP
         return __DIR__.'/../../../../web/'.$this->getUploadDir();
     }
 

@@ -1,5 +1,12 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: hasina
+ * Date: 13/08/2016
+ * Time: 11:41
+ */
 namespace MIRE\AdminBundle\Form;
+
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -11,40 +18,27 @@ use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
-class ArticleType extends AbstractType
+Class PdfType extends AbstractType
 {
     /**
      * @param FormBuilderInterface $builder
      * @param array $options
      */
-    public function buildForm(FormBuilderInterface $builder, array $options)
-    {
-
+    public function buildForm(FormBuilderInterface $builder, array $options){
         $builder
-            ->add('date',DateType::class)
-            ->add('categories', EntityType::class, array(
-                'class' => 'MIREAdminBundle:Categories',
-                'choice_label' => 'nom',
-                'multiple' => true
-            ))
-            ->add('imagefile', FileType::class, array('label' => 'Image(JPG or PNG file)'))
-            ->add('titre',TextType::class)
-            ->add('contenu',TextareaType::class)
-            ->add('id_auteur',IntegerType::class)
-            ->add('published',CheckboxType::class)
-            ->add('motcle', TextareaType::class)
-            ->add('save',SubmitType::class, array('label' => 'Modifier un article'))
-            // ->add('categories')
-        ;
-    }
+            ->add('datePublication',TextType::class)
+            ->add('nom',TextType::class)
+            ->add('pdffile', FileType::class, array('label' => 'Pdf'))
+        ->add('save',SubmitType::class, array('label' => 'ajouter'));
 
+    }
     /**
      * @param OptionsResolver $resolver
      */
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'MIRE\AdminBundle\Entity\Article'
+            'data_class' => 'MIRE\AdminBundle\Entity\Pdf'
         ));
     }
 }

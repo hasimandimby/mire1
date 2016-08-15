@@ -42,7 +42,7 @@ class ArticleController extends Controller
             return $this->redirect($this->generateUrl('mire_article_liste'));
         }
 
-        return $this->render('MIREAdminBundle:Article:add.html.twig', array('form' => $form->createView(),));
+        return $this->render('MIREAdminBundle:Article:add.html.twig', array('form' => $form->createView()));
         }
 
 

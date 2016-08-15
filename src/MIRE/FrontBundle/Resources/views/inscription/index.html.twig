@@ -1,0 +1,80 @@
+{% extends 'basefront2.html.twig' %}
+{% block content %}
+
+    <div class="post">
+        <div class="ptitle">
+            <h2>Inscription  </h2>
+        </div>
+        <br>
+        <div id="mycontent">
+        {{ form_start(form, {'attr': {'class': 'form-horizontal','novalidate': 'novalidate'}}) }}
+
+        {# Les erreurs générales du formulaire. #}
+        {{ form_errors(form) }}
+            <ol class="forms">
+            <li><label for="contactName">Nom</label>
+                {{ form_widget(form.nom, {'attr': {'class': 'requiredField'}}) }}
+
+            </li>
+            <li><label for="email">Prenom</label>
+                {{ form_widget(form.prenom, {'attr': {'class': 'requiredField'}}) }}
+
+            </li>
+            <li><label for="email">Email</label>
+                    {{ form_widget(form.email, {'attr': {'class': 'requiredField'}}) }}
+
+            </li>
+            <li class="textarea"><label for="commentsText">Adresse</label>
+                {{ form_widget(form.adresse, {'attr': {'class': 'requiredField'}}) }}
+
+            </li>
+
+            <li>
+                <label for="commentsText">Ville</label>
+                {{ form_widget(form.ville, {'attr': {'class': 'requiredField'}}) }}
+
+
+            </li>
+            <li>
+                <label for="contactName">Code Postale</label>
+                {{ form_widget(form.cp, {'attr': {'class': 'requiredField'}}) }}
+
+            </li>
+            <li>
+                <label for="contactName">Pays</label>
+                {{ form_widget(form.pays, {'attr': {'class': 'requiredField'}}) }}
+
+            </li>
+                <li><label for="email">Telephone</label>
+                    {{ form_widget(form.telephone, {'attr': {'class': 'requiredField'}}) }}
+
+                </li>
+            <li>
+                <label for="contactName">Mobile</label>
+                {{ form_widget(form.mobile, {'attr': {'class': 'requiredField'}}) }}
+
+
+            </li>
+            <li>
+                <label for="contactName">Mot de passe</label>
+                {{ form_widget(form.password, {'attr': {'class': 'requiredField'}}) }}
+
+            </li>
+            <li  class="buttons">
+                <label for="save"></label>
+                {{ form_widget(form.save, {'attr': {'class': 'requiredField'}}) }}
+
+            </li>
+
+            </ol>
+            {# Génération automatique des champs pas encore écrits.
+           Dans cet exemple, ce serait le champ CSRF (géré automatiquement par Symfony !)
+           et tous les champs cachés (type « hidden »). #}
+        {{ form_rest(form) }}
+
+        {# Fermeture de la balise <form> du formulaire HTML #}
+        {{ form_end(form) }}
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,3 +1,23 @@
 mire_front_homepage:
     path:     /
     defaults: { _controller: MIREFrontBundle:Default:index }
+
+mire_front_article:
+    path:     /article
+    defaults: { _controller: MIREFrontBundle:Article:index }
+
+mire_front_contact:
+    path:     /contact
+    defaults: { _controller: MIREFrontBundle:Contact:index }
+
+mire_front_categorie:
+    path:     /categorie
+    defaults: { _controller: MIREFrontBundle:Categorie:index }
+
+mire_front_inscription:
+    path:     /inscription
+    defaults: { _controller: MIREFrontBundle:Inscription:index }
+
+mire_front_page:
+    path:     /article
+    defaults: { _controller: MIREFrontBundle:Page:index }
