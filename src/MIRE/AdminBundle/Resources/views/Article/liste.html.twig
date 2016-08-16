@@ -26,7 +26,7 @@
                  <td><input type="checkbox" name=""></td>
                  <td>{{ article.titre }}</td>
                  <td>categorie</td>
-                 <td></td>
+                 <td>{{ article.date|date('d/m/Y')}}</td>
                  <td>Auteur</td>
 
                  <td><a href="{{ path('mire_article_update', {'id': article.id }) }}"><img src="{{ asset('bundles/admin/images/user_edit.png')}}" alt="" title="" border="0"></a></td>
