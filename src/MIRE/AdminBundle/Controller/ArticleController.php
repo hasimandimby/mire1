@@ -55,18 +55,18 @@ class ArticleController extends Controller
             ->find($id);
              $form = $this->createForm(ArticleType::class, $article);
 
-        if ($form->handleRequest($request)->isValid()) {
-
+              if ($form->handleRequest($request)->isValid()) {
+                  $article->upload();
             $em = $this->getDoctrine()->getManager();
             $em->persist($article);
             $em->flush();
             $request->getSession()->getFlashBag()->add('notice', 'Article bien modifié.');
 
 
-            return $this->redirect($this->generateUrl('mire_article_liste'));
+            return $this->redirect($this->generateUrl('mire_article_update', array('id' => $article->getId())));
         }
 
-        return $this->render('MIREAdminBundle:Article:update.html.twig', array('form' => $form->createView(),));
+        return $this->render('MIREAdminBundle:Article:update.html.twig', array('form' => $form->createView(),'article'=>$article));
 
     }
     public function deleteAction($id)
