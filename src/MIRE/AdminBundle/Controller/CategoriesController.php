@@ -45,7 +45,7 @@ class CategoriesController extends Controller
             ->find($id);
         $form = $this->createForm(CategoriesType::class, $categorie);
 
-        if ($form->isValid()) {
+        if ($form->handleRequest($request)->isValid()) {
 
             $em = $this->getDoctrine()->getManager();
             $em->persist($categorie);

@@ -14,11 +14,19 @@ class DefaultController extends Controller
     }
     public function launeAction()
     {
-        return $this->render('MIREFrontBundle:Default:blockalaune.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $article =$em->getRepository('MIREAdminBundle:Article')->findByCategorieLast(1);
+        $listearticle =$em->getRepository('MIREAdminBundle:Article')->findByCategorie(1);
+        
+        return $this->render('MIREFrontBundle:Default:blockalaune.html.twig',array('article' => $article,'listearticle' => $listearticle));
     }
     public function listealauneAction()
     {
-        return $this->render('MIREFrontBundle:Default:blocklistealaune.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $listearticle =$em->getRepository('MIREAdminBundle:Article')->findByCategorie(2);
+
+        return $this->render('MIREFrontBundle:Default:blocklistealaune.html.twig',array('listearticle' => $listearticle));
+
     }
     public function sliderAction()
     {
@@ -30,7 +38,7 @@ class DefaultController extends Controller
     }
     public function menuAction()
     {
-        $em = $this->getDoctrine()->getEntityManager();
+        $em = $this->getDoctrine()->getManager();
         $categories = $em->getRepository("MIREAdminBundle:Categories")->findAll();
 
         return $this->render('MIREFrontBundle:Default:blockmenu.html.twig',array('categories' => $categories));

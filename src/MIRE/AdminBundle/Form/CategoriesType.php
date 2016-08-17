@@ -23,7 +23,7 @@ class CategoriesType extends AbstractType
             -> add('nom',TextType::class)
             -> add('ordre',IntegerType::class)
             -> add('place',IntegerType::class)
-            ->add('save',SubmitType::class, array('label' => 'Ajouter'))
+            ->add('save',SubmitType::class, array('label' => 'Modifier'))
 
         ;
     }
