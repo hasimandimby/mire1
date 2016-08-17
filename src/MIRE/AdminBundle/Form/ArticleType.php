@@ -33,7 +33,7 @@ class ArticleType extends AbstractType
             ->add('id_auteur',IntegerType::class)
             ->add('published',CheckboxType::class)
             ->add('motcle', TextareaType::class)
-            ->add('save',SubmitType::class, array('label' => 'Modifier un article'))
+            ->add('save',SubmitType::class, array('label' => 'Ajouter un article'))
             // ->add('categories')
         ;
     }
