@@ -1,7 +1,7 @@
 {% extends 'baseadmin.html.twig' %}
 
  {% block rigth_content %}
-     <h2>Listes des auteurs du journal Ligne de Mire</h2>
+<h2>Listes des auteurs du journal Ligne de Mire</h2>
      <table id="rounded-corner" summary="2007 Major IT Companies' Profit">
          <thead>
          <tr>
@@ -21,14 +21,14 @@
          </tr>
          </tfoot>
          <tbody>
-         {% for article in articles %}
+         {% for aut in auteur %}
              <tr>
                  <td><input type="checkbox" name=""></td>
-                 <td>{{ auteur.nom }}</td>
-                 <td>{{ auteur.prenom}}</td>
-                 <td>{{ auteur.email}}</td>
-                 <td><a href="{{ path('mire_auteur_update', {'id': article.id }) }}"><img src="{{ asset('bundles/admin/images/user_edit.png')}}" alt="" title="" border="0"></a></td>
-                 <td><a href="{{ path('mire_auteur_delete', {'id': article.id }) }}" class="ask"><img src="{{ asset('bundles/admin/images/trash.png')}}" alt="" title="" border="0"></a></td>
+                 <td>{{ aut.nom }}</td>
+                 <td>{{ aut.prenom}}</td>
+                 <td>{{ aut.email}}</td>
+                 <td><a href="{{ path('mire_auteur_update', {'id': aut.id }) }}"><img src="{{ asset('bundles/admin/images/user_edit.png')}}" alt="" title="" border="0"></a></td>
+                 <td><a href="{{ path('mire_auteur_delete', {'id': aut.id }) }}" class="ask"><img src="{{ asset('bundles/admin/images/trash.png')}}" alt="" title="" border="0"></a></td>
              </tr>
          {% endfor %}
 

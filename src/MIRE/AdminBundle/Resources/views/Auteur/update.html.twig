@@ -1,14 +1,14 @@
 {% extends 'baseadmin.html.twig' %}
  {% block rigth_content %}
-     <h2>Formulaire categorie</h2>
+     <h2>modifier l'article</h2>
      <div class="well">
-         {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+         {{ form_start(form, {'attr': {'class': 'form-horizontal','novalidate': 'novalidate'}}) }}
+
          {# Les erreurs générales du formulaire. #}
          {{ form_errors(form) }}
-
          <div class="form-group">
              {# Génération du label. #}
-             {{ form_label(form.nom, "Nom du catégorie", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+             {{ form_label(form.nom, "Nom de l'auteur", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
 
              {# Affichage des erreurs pour ce champ précis. #}
              {{ form_errors(form.nom) }}
@@ -22,30 +22,30 @@
 
          <div class="form-group">
              {# Génération du label. #}
-             {{ form_label(form.place, "Place du categorie dans le bloc", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+             {{ form_label(form.prenom, "Prenom de l'auteur", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
 
              {# Affichage des erreurs pour ce champ précis. #}
-             {{ form_errors(form.place) }}
+             {{ form_errors(form.prenom) }}
 
              <div class="col-sm-4">
                  {# Génération de l'input. #}
-                 {{ form_widget(form.place, {'attr': {'class': 'form-control'}}) }}
+                 {{ form_widget(form.prenom, {'attr': {'class': 'form-control'}}) }}
              </div>
          </div>
          <br/>
+
          <div class="form-group">
              {# Génération du label. #}
-             {{ form_label(form.ordre, "Ordre du categorie", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+             {{ form_label(form.email, "Email  de l'auteur", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
 
              {# Affichage des erreurs pour ce champ précis. #}
-             {{ form_errors(form.ordre) }}
+             {{ form_errors(form.email) }}
 
              <div class="col-sm-4">
                  {# Génération de l'input. #}
-                 {{ form_widget(form.ordre, {'attr': {'class': 'form-control'}}) }}
+                 {{ form_widget(form.email, {'attr': {'class': 'form-control'}}) }}
              </div>
          </div>
-         <br/>
          <br/>
          <br/>
          {# Pour le bouton, pas de label ni d'erreur, on affiche juste le widget #}
@@ -59,4 +59,5 @@
          {# Fermeture de la balise <form> du formulaire HTML #}
          {{ form_end(form) }}
      </div>
+
  {% endblock %}

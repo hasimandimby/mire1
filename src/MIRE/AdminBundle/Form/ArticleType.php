@@ -27,13 +27,17 @@ class ArticleType extends AbstractType
                 'choice_label' => 'nom',
                 'multiple' => true
             ))
+            ->add('auteur', EntityType::class, array(
+                'class' => 'MIREAdminBundle:Auteur',
+                'choice_label' => 'nom',
+                'multiple' => false
+            ))
             ->add('imagefile', FileType::class, array('label' => 'Image(JPG or PNG file)'))
             ->add('titre',TextType::class)
             ->add('contenu',TextareaType::class)
-            ->add('id_auteur',IntegerType::class)
             ->add('published',CheckboxType::class)
             ->add('motcle', TextareaType::class)
-            ->add('save',SubmitType::class, array('label' => 'Ajouter un article'))
+            ->add('save',SubmitType::class, array('label' => 'Enregistrer'))
             // ->add('categories')
         ;
     }

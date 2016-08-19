@@ -126,4 +126,35 @@ class Categories
     {
         return $this->nom;
     }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->articles = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add article
+     *
+     * @param \MIRE\AdminBundle\Entity\Article $article
+     *
+     * @return Categories
+     */
+    public function addArticle(\MIRE\AdminBundle\Entity\Article $article)
+    {
+        $this->articles[] = $article;
+
+        return $this;
+    }
+
+    /**
+     * Remove article
+     *
+     * @param \MIRE\AdminBundle\Entity\Article $article
+     */
+    public function removeArticle(\MIRE\AdminBundle\Entity\Article $article)
+    {
+        $this->articles->removeElement($article);
+    }
 }

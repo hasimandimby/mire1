@@ -109,6 +109,22 @@ mire_image_update:
 mire_image_delete:
     path:      /image/delete/{id}
     defaults:  { _controller: MIREAdminBundle:Image:delete, id: id  }
+
+mire_auteur_add:
+    path:     /auteur/add
+    defaults: { _controller: MIREAdminBundle:Auteur:add }
+mire_auteur_edit:
+    path:     /auteur/index
+    defaults: { _controller: MIREAdminBundle:Auteur:index }
+mire_auteur_liste:
+    path:     /auteur/liste
+    defaults: { _controller: MIREAdminBundle:Auteur:liste }
+mire_auteur_update:
+    path:      /auteur/update/{id}
+    defaults:  { _controller: MIREAdminBundle:Auteur:update, id: id  }
+mire_auteur_delete:
+    path:      /auteur/delete/{id}
+    defaults:  { _controller: MIREAdminBundle:Auteur:delete, id: id  }
 login:
     path:   /login
     defaults:  { _controller: MIREAdminBundle:Security:login }

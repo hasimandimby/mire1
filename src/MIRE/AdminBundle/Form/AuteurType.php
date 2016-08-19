@@ -11,7 +11,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class CategoriesType extends AbstractType
+class AuteurType extends AbstractType
 {
     /**
      * @param FormBuilderInterface $builder
@@ -21,20 +21,20 @@ class CategoriesType extends AbstractType
     {
         $builder
             -> add('nom',TextType::class)
-            -> add('ordre',IntegerType::class)
-            -> add('place',IntegerType::class)
+            -> add('prenom',TextType::class)
+            -> add('email',TextType::class)
             ->add('save',SubmitType::class, array('label' => 'Enregistrer'))
 
         ;
     }
-    
+
     /**
      * @param OptionsResolver $resolver
      */
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'MIRE\AdminBundle\Entity\Categories'
+            'data_class' => 'MIRE\AdminBundle\Entity\Auteur'
         ));
     }
 }

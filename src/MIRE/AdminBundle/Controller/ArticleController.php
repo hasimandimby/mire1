@@ -61,9 +61,8 @@ class ArticleController extends Controller
             $em->persist($article);
             $em->flush();
             $request->getSession()->getFlashBag()->add('notice', 'Article bien modifié.');
+                  return $this->redirect($this->generateUrl('mire_article_liste'));
 
-
-            return $this->redirect($this->generateUrl('mire_article_update', array('id' => $article->getId())));
         }
 
         return $this->render('MIREAdminBundle:Article:update.html.twig', array('form' => $form->createView(),'article'=>$article));

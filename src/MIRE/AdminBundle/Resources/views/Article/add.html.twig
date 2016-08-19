@@ -18,6 +18,7 @@
             {{ form_widget(form.date, {'attr': {'class': 'form-control'}}) }}
         </div>
     </div>
+    <br/>
     <div class="form-group">
         {# Génération du label. #}
         {{ form_label(form.categories, "Categorie", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
@@ -30,6 +31,7 @@
             {{ form_widget(form.categories, {'attr': {'class': 'form-control'}}) }}
         </div>
     </div>
+    <br/>
 
     <div class="form-group">
         {# Génération du label. #}
@@ -43,7 +45,7 @@
             {{ form_widget(form.titre, {'attr': {'class': 'form-control'}}) }}
         </div>
     </div>
-
+    <br/>
     {# Idem pour un autre champ. #}
     <div class="form-group">
         {{ form_label(form.contenu, "Contenu de l'article", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
@@ -52,6 +54,7 @@
             {{ form_widget(form.contenu, {'attr': {'class': 'form-control'}}) }}
         </div>
     </div>
+    <br/>
     <div class="form-group">
         {{ form_label(form.motcle, "Mot clé de l'article", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
         {{ form_errors(form.contenu) }}
@@ -60,22 +63,11 @@
             {{ form_widget(form.motcle, {'attr': {'class': 'form-control'}}) }}
         </div>
     </div>
-
+    <br/>
     {# Génération du label + error + widget pour un champ #}
 
 
-    <div class="form-group">
-        {# Génération du label. #}
-        {{ form_label(form.id_auteur, "Nom de l'auteur", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
 
-        {# Affichage des erreurs pour ce champ précis. #}
-        {{ form_errors(form.id_auteur) }}
-
-        <div class="col-sm-4">
-            {# Génération de l'input. #}
-            {{ form_widget(form.id_auteur, {'attr': {'class': 'form-control'}}) }}
-        </div>
-    </div>
      <div class="form-group">
         {# Génération du label. #}
         {{ form_label(form.imagefile, "Image à la une", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
@@ -88,6 +80,7 @@
             {{ form_widget(form.imagefile, {'attr': {'class': 'form-control'}}) }}
         </div>
     </div>
+    <br/> <br/>
     <div class="form-group">
         {# Génération du label. #}
         {{ form_label(form.published, "Publier", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
@@ -100,6 +93,21 @@
             {{ form_widget(form.published, {'attr': {'class': 'form-control'}}) }}
         </div>
     </div>
+    <br/> <br/>
+    <div class="form-group">
+        {# Génération du label. #}
+        {{ form_label(form.auteur, "Auteur", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+        {# Affichage des erreurs pour ce champ précis. #}
+        {{ form_errors(form.auteur) }}
+
+        <div class="col-sm-4">
+            {# Génération de l'input. #}
+            {{ form_widget(form.auteur, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+
+    <br/>
     {# Pour le bouton, pas de label ni d'erreur, on affiche juste le widget #}
     {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
 

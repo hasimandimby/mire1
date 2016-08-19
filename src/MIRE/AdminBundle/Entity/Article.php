@@ -22,6 +22,7 @@ class Article
 
         $this->date         = new \Datetime();
         $this->categories = new ArrayCollection();
+        $this->auteur = new ArrayCollection();
 
     }
 
@@ -77,17 +78,18 @@ class Article
      */
     private $date;
 
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="id_auteur", type="integer", nullable=true)
-     */
-    private $idAuteur;
+
 
     /**
      * @ORM\ManyToMany(targetEntity="Categories", cascade={"persist"})
      */
     private $categories ;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="MIRE\AdminBundle\Entity\Auteur")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $auteur;
 
     /**
      * @var string
@@ -161,31 +163,6 @@ class Article
     {
         return $this->date;
     }
-
-    /**
-     * Set idAuteur
-     *
-     * @param integer $idAuteur
-     *
-     * @return Article
-     */
-    public function setIdAuteur($idAuteur)
-    {
-        $this->idAuteur = $idAuteur;
-
-        return $this;
-    }
-
-    /**
-     * Get idAuteur
-     *
-     * @return int
-     */
-    public function getIdAuteur()
-    {
-        return $this->idAuteur;
-    }
-
 
     /**
      * Set contenu
@@ -296,6 +273,19 @@ class Article
     }
 
     /**
+     * Get auteur
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getAuteur()
+    {
+        return $this->auteur;
+    }
+
+
+
+
+    /**
      * Set imagefile
      *
      * @param string $imagefile
@@ -393,4 +383,42 @@ class Article
     }
 
     // …
+
+    /**
+     * Add auteur
+     *
+     * @param \MIRE\AdminBundle\Entity\Auteur $auteur
+     *
+     * @return Article
+     */
+    public function addAuteur(\MIRE\AdminBundle\Entity\Auteur $auteur)
+    {
+        $this->auteur[] = $auteur;
+
+        return $this;
+    }
+
+    /**
+     * Remove auteur
+     *
+     * @param \MIRE\AdminBundle\Entity\Auteur $auteur
+     */
+    public function removeAuteur(\MIRE\AdminBundle\Entity\Auteur $auteur)
+    {
+        $this->auteur->removeElement($auteur);
+    }
+
+    /**
+     * Set auteur
+     *
+     * @param \MIRE\AdminBundle\Entity\Auteur $auteur
+     *
+     * @return Article
+     */
+    public function setAuteur(\MIRE\AdminBundle\Entity\Auteur $auteur)
+    {
+        $this->auteur = $auteur;
+
+        return $this;
+    }
 }
