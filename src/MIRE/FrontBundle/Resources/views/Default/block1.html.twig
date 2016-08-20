@@ -2,33 +2,22 @@
 
 
     <div id="colorcontenth3" class="custom1">
-        <a href="#" title="">Economie</a>
+        <a href="#" title="">   {% for c in categorieblock1 %}
+                {{ c.nom }}
+            {% endfor %}</a>
     </div>
-
+    {% for article in articlesblock1 %}
     <div id="colorcontentwrap">
-        <h3><a href="#" rel="bookmark">Goldman Sachs Took Biggest Loan During Fed&#8217;s Emergency Program</a></h3>
+        <h3><a href="{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h3>
 
 
-        <a href="#"><img width="146" height="85" src="{{ asset('bundles/front/images/Goldman-Sachs-146x85.jpg')}}" class="attachment-colorcontentblock1 " alt="" /></a>
+        <a href="#"><img width="146" height="85" src="{{ asset('uploads/img/')}}{{ article.image }}" class="attachment-colorcontentblock1 " alt="" /></a>
         <p>
-            WASHINGTON &#8211; Goldman Sachs, Lehman Brothers, and European banks RBS and UBS were the biggest beneficiaries of very short-term Federal Reserve loans extended at the height&nbsp;<a href='#'>More...</a></p>
+
+            {{ article.contenu[:700]|raw }}
+            <a href='#'>More...</a></p>
         <div class="cb"></div>
     </div>
+    {% endfor %}
 
-    <div id="colorcontentwrap">
-        <h2><a href="#" rel="bookmark">Bank Of America&#8217;s $8.5 Billion Mortgage Settlement Challenged By Bondholders</a></h2>
-        <a href="#"><img width="146" height="85" src="{{ asset('bundles/front/images/Bank-Of-America-146x85.jpg')}}" class="attachment-colorcontentblock1 " alt="" /></a>
-        <p>
-            NEW YORK (Jonathan Stempel) &#8211; A group of bondholders plans to challenge Bank of America Corp&#8217;s $8.5 billion settlement with holders in soured mortgage-backed securities,&nbsp;<a href='#'>More...</a></p>
-        <div class="cb"></div>
-    </div>
-<!--    <div id="colorcontentwrap">
-        <h2><a href="#" rel="bookmark">Yankee Stadium &#8216;Service Fee&#8217; Scheme Now Disclosed To Beer Drinkers</a></h2>
-
-
-        <a href="#"><img width="146" height="85" src="{{ asset('bundles/front/images/Yankee-Stadium-146x85.jpg')}}" class="attachment-colorcontentblock1 " alt="" /></a>
-        <p>Back in May, a group of beer and food servers at Yankee Stadium sued the concession company they worked for, accusing Legends Hospitality of pocketing their hard-earned tips.&nbsp;<a href='#'>More...</a></p>
-        <div class="cb"></div>
-    </div>
--->
 </div>

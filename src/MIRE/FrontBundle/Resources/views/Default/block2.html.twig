@@ -1,19 +1,21 @@
 <div id="colorcontentblock">
 
-    <div id="colorcontenth3" class="custom2">Sciences<br/></div>
-    <a href="#"><img width="384" height="217" src="{{ asset('bundles/front/images/Going-After-Michele-Bachmann-Ahead-Of-2012-Has-Its-Risks-384x217.jpg')}}" class="attachment-colorcontentblock2 " alt="" /></a>
+    <div id="colorcontenth3" class="custom2"> <a href="#" title="">   {% for c in categorieblock2 %}
+                {{ c.nom }}
+            {% endfor %}</a><br/></div>
+    <a href="#"><img width="384" height="217" src="{{ asset('uploads/img/')}}{{ articlesblock2big.image }}" class="attachment-colorcontentblock2 " alt="" /></a>
     <div id="colorcontentwrap2">
-        <h2><a href="#" rel="bookmark">Going After Michele Bachmann Ahead Of 2012 Has Its Risks</a></h2>
-        <p>ST. PAUL, Minn. &#8212; For Michele Bachmann, the laugh line doubled as a clear message that she thinks she&#8217;s ready for the rough-and-tumble of presidential politics.
-            &#8220;I&nbsp;<a href='#'>More...</a></p>
+
+        <h2><a href="#" rel="bookmark">{{  articlesblock2big.titre }}</a></h2>
+        <p>  {{ articlesblock2big.contenu[:650]|raw }}<a href='#'> More...</a></p>
         <div class="cb"></div>
     </div>
-
+    {% for  article in articlesblock2 %}
     <div id="colorcontentwrap2">
-        <h2><a href="#" rel="bookmark">Minnesota Shutdown Sees Light At The End Of The Tunnel</a></h2>
+        <h2><a href="#" rel="bookmark">{{ article.titre }}</a></h2>
 
-        <p>Minnesota Gov. Mark Dayton and top Republicans struck a deal Thursday to end a budget impasse that prompted the state government to shut down, with the Democratic governor giving&nbsp;<a href='#'>More...</a></p>
+        <p> {{ article.contenu[:650]|raw }}<a href='#'> More...</a></p>
         <div class="cb"></div>
     </div>
-
+    {% endfor %}
 </div>

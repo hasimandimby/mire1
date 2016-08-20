@@ -1,29 +1,18 @@
 <div id="colorcontentblock">
 
-    <div id="colorcontenth3" class="custom4"><a href="#" title="">Société</a></div>
+    <div id="colorcontenth3" class="custom4"><a href="#" title=""> {% for c in categorieblock4 %}
+                    {{ c.nom }}
+                {% endfor %}</a>
+    </div>
+    {% for article in articlesblock4 %}
     <div id="colorcontentwrap4">
         <h2>
-            <a href="#"><img width="205" height="120" src="{{ asset('bundles/front/images/Rescue-Me-Items-Head-to-Smithsonian-Callie-Thorne-Talks-Final-Season-205x120.jpg')}}" class="attachment-colorcontentblock4 " alt="" /></a>
-            <a href="#" rel="bookmark">&#8216;Rescue Me&#8217; Items Head to Smithsonian, Callie Thorne Talks Final Season</a></h2>
-        &#8216;Rescue Me&#8217; is fast approaching its swansong. As the cast, crew and fans start to ponder...
+            <a href="#"><img width="205" height="120" src="{{ asset('uploads/img/')}}{{ article.image }}" class="attachment-colorcontentblock4 " alt="" /></a>
+            <a href="#" rel="bookmark">{{ article.titre }}</a></h2>
+        {{ article.contenu[:650]|raw }} ...
         <div class="cb"></div>
     </div>
 
-
-    <div id="colorcontentwrap4">
-        <h2>
-            <a href="#"><img width="205" height="120" src="{{ asset('bundles/front/images/Emmys-2011-Nomination-Snubs-Surprises-205x120.jpg')}}" class="attachment-colorcontentblock4 " alt="" /></a>
-            <a href="#" rel="bookmark">Emmys 2011: Nomination Snubs &#038; Surprises</a></h2>
-        Watching Melissa McCarthy try to keep her composure announcing the 2011 Emmy Awards nominations after learning...
-        <div class="cb"></div>
-    </div>
-
-    <div id="colorcontentwrap4">
-        <h2><a href="#"><img width="205" height="120" src="{{ asset('bundles/front/images/My-Emmy-Reactions-Some-Joy-Some-Confusion-and-the-Happy-Dance-List-205x120.jpg')}}" class="attachment-colorcontentblock4 " alt="" /></a>
-
-            <a href="#" rel="bookmark">My Emmy Reactions: Some Joy, Some Confusion and the Happy Dance List</a></h2>
-        Every year on Emmy nomination day, as soon as the list of nominees is released, I...
-        <div class="cb"></div>
-    </div>
+    {% endfor  %}
 
 </div>
