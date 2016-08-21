@@ -5,10 +5,9 @@
          <thead>
          <tr>
              <th scope="col" class="rounded-company">Publier</th>
-             <th scope="col" class="rounded">Titre</th>
-             <th scope="col" class="rounded">Categorie</th>
-             <th scope="col" class="rounded">Date d'edition</th>
-             <th scope="col" class="rounded">Auteur</th>
+             <th scope="col" class="rounded">Nom</th>
+             <th scope="col" class="rounded">Position</th>
+             <th scope="col" class="rounded">Odre</th>
              <th scope="col" class="rounded">Edit</th>
              <th scope="col" class="rounded-q4">Delete</th>
          </tr>
@@ -21,21 +20,21 @@
          </tr>
          </tfoot>
          <tbody>
-         {% for article in articles %}
+         {% for categorie in categories %}
              <tr>
                  <td><input type="checkbox" name=""></td>
-                 <td>{{ article.titre }}</td>
-                 <td>categorie</td>
-                 <td></td>
+                 <td>{{ categorie.nom }}</td>
+                 <td>{{ categorie.place }}</td>
+                 <td>{{ categorie.ordre }}</td>
                  <td>Auteur</td>
 
-                 <td><a href="{{ path('mire_article_update', {'id': article.id }) }}"><img src="{{ asset('bundles/admin/images/user_edit.png')}}" alt="" title="" border="0"></a></td>
-                 <td><a href="{{ path('mire_article_delete', {'id': article.id }) }}" class="ask"><img src="{{ asset('bundles/admin/images/trash.png')}}" alt="" title="" border="0"></a></td>
+                 <td><a href="{{ path('mire_categories_update', {'id': categorie.id }) }}"><img src="{{ asset('bundles/admin/images/user_edit.png')}}" alt="" title="" border="0"></a></td>
+                 <td><a href="{{ path('mire_categories_delete', {'id': categorie.id }) }}" class="ask"><img src="{{ asset('bundles/admin/images/trash.png')}}" alt="" title="" border="0"></a></td>
              </tr>
          {% endfor %}
 
          </tbody>
      </table>
-     <a  href="{{ path('mire_article_add') }}"  class="bt_green"><span class="bt_green_lft"></span><strong>Ajouter un Article</strong><span class="bt_green_r"></span></a>
+     <a  href="{{ path('mire_categories_add') }}"  class="bt_green"><span class="bt_green_lft"></span><strong>Ajouter un Categorie</strong><span class="bt_green_r"></span></a>
 
  {% endblock %}
