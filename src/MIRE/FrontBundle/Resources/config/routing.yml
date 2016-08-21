@@ -3,8 +3,8 @@ mire_front_homepage:
     defaults: { _controller: MIREFrontBundle:Default:index }
 
 mire_front_article:
-    path:     /article
-    defaults: { _controller: MIREFrontBundle:Article:index }
+    path:     /article/{titre}
+    defaults: { _controller: MIREFrontBundle:Article:index,titre:titre }
 
 mire_front_contact:
     path:     /contact

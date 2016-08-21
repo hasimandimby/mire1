@@ -1,24 +1,19 @@
 <div id="colorcontentwrap8line">
-    <div id="colorcontenth3_small" class="custom8"><a href="#" title="">Magazines</a></div>
+    <div id="colorcontenth3_small" class="custom8"><a href="#" title="">{% for c in categorieblock8 %}
+                {{ c.nom }}
+            {% endfor %}</a></div>
     <div id="colorcontentwrap8">
-        <h3><a href="#" rel="bookmark">Global Warming: Nature Can&#8217;t Save Us From Ourselves</a></h3>
-        <a href="#"><img width="320" height="190" src="{{ asset('bundles/front/images/globalwarming-320x190.jpg')}}" class="attachment-colorcontentblock8 " alt="" /></a>
+        <h3><a href="" rel="bookmark">{{ articlesblock8big.titre }}</a></h3>
+        <a href="#"><img width="320" height="190" src="{{ asset('uploads/img/')}}{{ articlesblock8big.image }}" class="attachment-colorcontentblock8 " alt="" /></a>
 
-        The notion that nature itself will act as a check on the atmospheric excesses of humanity has long held a fair..
+        {{ articlesblock8big.titre[:750]|raw }}..
         <div class="cb"></div>
     </div>
-
+    {% for article in articlesblock8 %}
     <div id="colorcontentwrap8">
-        <h2><a href="#" rel="bookmark">Obama Administration And Wildlife Advocates Strike Deal On Endangered Species Act Protections</a></h2>
+        <h2><a href="#" rel="bookmark">{{ article.titre }}</a></h2>
         <div class="cb"></div>
     </div>
-    <div id="colorcontentwrap8">
-        <h2><a href="#" rel="bookmark">California Deploys Wasps, Scientists Highlight More Green Alternatives To Pesticides</a></h2>
-        <div class="cb"></div>
-    </div>
-    <div id="colorcontentwrap8">
-        <h2><a href="#" rel="bookmark">Carbon Capture Project By American Electric Power Co. Put On Hold</a></h2>
-        <div class="cb"></div>
-    </div>
+    {% endfor %}
 
 </div>

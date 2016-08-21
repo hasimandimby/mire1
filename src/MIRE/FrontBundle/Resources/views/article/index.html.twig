@@ -3,7 +3,7 @@
 <div id="homepost">
 
 
-
+{%  for article in articles %}
 
 
     <div id="datemeta">
@@ -19,7 +19,7 @@
 
 
 
-        <h1 class="posttitle">  Transformers: Dark of the Moon Movie Review</h1>
+        <h1 class="posttitle"> {{ article.titre }} </h1>
 
 
 
@@ -57,16 +57,8 @@
                 <div class="ptags"><span class="ptags_heading">Tags</span>
                     <div style="margin-top:5px;text-align:center;"><a href="#" rel="tag">John Malkovich</a><a href="#" rel="tag">Josh Duhamel</a><a href="#" rel="tag">Ken Jeong</a><a href="#" rel="tag">Michael Bay</a><a href="#" rel="tag">Shia LaBeouf</a><a href="#" rel="tag">Tyrese Gibson</a></div>
                 </div>
-            </div>			  <p>After he’s cleared of sexual harassment at the end of the classic Simpsons episode, Homer Badman, Homer J. Simpson turns to his wife, and gleefully announces, “Marge, my friend, I haven’t learned a thing.”</p>
-            <p>Michael Bay is Homer Simpson. Not superficially, of course – he has a gorgeous head of lovely, flowing hair, and he’s not yellow. But when it comes to avoiding the same mistakes that beset 2009’s Transformers: Revenge Of The Fallen for this third (and final?) instalment of his toy-based blockbuster trilogy, he hasn’t learned a thing.</p>
-            <p><img class="alignnone size-full wp-image-655" title="transformers-dark-of-the-moon-movie-poster" src="images/transformers-dark-of-the-moon-movie-poster.jpg" alt="" width="450" height="673"></p>
-            <p>OK, admittedly the alarmingly racist robots, Skids and Mudflap, are gone, and there are no disconcerting close-ups of giant robot balls. But that still doesn’t prevent what remains from being, well, giant robot balls.</p>
-            <p>Exposition scenes are still choppy as hell, the writing is lazy, the plot turns brazen and in bad taste (Chernobyl was caused by Decepticons) the film is overloaded with a cavalcade of superfluous supporting players (look! It’s Josh Duhamel as Captain Wotsit! Huzzah! Here comes Tyrese Gibson as Thingummy!), and there’s an oafish insistence on cheap-seats comedy relief that leaves actors like John Malkovich (as Sam’s scary new boss), Alan Tudyk (as John Turturro’s fey personal assistant) and Ken Jeong (running through his tired old schtick one more time) desperately mugging. It does lead, though, to the year’s most welcome death scene.</p>
-            <p>That’s the bad news. The good news is that Dark Of The Moon is better than Revenge Of The Fallen. But not by much.</p>
-            <p>That upturn is testament to its last 45 minutes, in which Bay drops the Homer impression and does his best stab at Michael Bay. For, when all’s said and done, not many directors can handle large-scale action like he can, and the climactic Bayhem, in which the Decepticons occupy Chicago and transform (ten points!) it into a smoking ruin, is stunning. Price-of-admission-alone stunning, as teams of winged base-jumpers dive out of planes and plummet past skyscrapers; those same buildings lurch to 90-degrees in a series of vertiginous shots that will have you clutching your chair (the 3D, probably the best deployment of the form since Avatar, helps here); and giant robots, of course, kick the living oil out of each other.&nbsp; <img class="size-full wp-image-653 alignleft" title="Transformer-3-Dark-of-the-Moon-2" src="images/Transformer-3-Dark-of-the-Moon-2.jpg" alt="" width="640" height="466"></p>
-            <p>For a movie squarely aimed at teens, it’s extraordinarily violent. Humans are reduced to smoking skeletons by alien attacks, but the likes of Optimus Prime (when he’s not giving sanctimonious speeches, Jerry Springer-style) and Megatron (almost completely wasted) save the toughest treatment for themselves. Heads are lopped off, spinal columns are ripped out, and several are executed with shotgun blasts to the head, gangland-style, in a manner that suggests that this is the final instalment, at least for a while. If this action were human-on-human, we’d have the next Human Centipede 2 on our hands. Best not show this to your Roomba, though – it’ll be traumatized.</p>
-            <p>The first Transformers has its flaws, but it did have its charms. LaBeouf’s Sam Witwicky was an intriguing hero, like Woody Allen was parachuted into an action flick. Dark Of The Moon is mostly charmless, however – for the first (surprisingly action-lite, slow-moving) hour, Sam is a moaning, presumptuous brat whose relationship with his new girlfriend (Huntington-Whiteley) is so shabbily-defined that it’s hard to sympathise with him. A boy getting his first car is relatable; a young man throwing a tantrum because his impossibly hot girlfriend has a hotter boss is not.</p>
-            <p>As for Huntington-Whiteley, the much-trumpeted replacement for Megan Fox (dismissed with an amusing, “She was a bitch. We didn’t like her.”), Bay introduces her with a self-parodying shot of her barely-clad bottom and it’s all downhill from there. You’ll believe a robot can fly, but you won’t believe a Huntington-Whiteley can talk.</p>
+            </div>
+            {{ article.contenu|raw }}
 
 
 
@@ -109,7 +101,7 @@
     </div>
 
 
-
+{% endfor %}
 
 
     <div id="related" class="clearfix">
@@ -117,19 +109,6 @@
 
 
 
-        <div id="relatednews"><div id="relatednewsh2">Related News</div>
-            <div style="float:right;height:19px;margin-right:10px;">
-                <!-- AddThis Button BEGIN -->
-                <div class="addthis_toolbox addthis_default_style ">
-                    <a href="#" class="addthis_button_facebook_like at300b" fb:like:layout="button_count"><div class="fb-like fb_iframe_widget" data-layout="button_count" data-show_faces="false" data-share="false" data-action="like" data-width="90" data-height="25" data-font="arial" data-href="http://magazine3.com/demo/newspapertimes/transformers-dark-of-the-moon-movie-review/" data-send="false" style="height: 25px;" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=0&amp;font=arial&amp;height=25&amp;href=http%3A%2F%2Fmagazine3.com%2Fdemo%2Fnewspapertimes%2Ftransformers-dark-of-the-moon-movie-review%2F&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;share=false&amp;show_faces=false&amp;width=90"><span style="vertical-align: bottom; width: 78px; height: 20px;"><iframe name="f20c55b829f4e9" width="90px" height="25px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="images/like.html" style="border: none; visibility: visible; width: 78px; height: 20px;" class=""></iframe></span></div></a>
-                    <a href="#" class="addthis_button_google_plusone at300b" g:plusone:size="medium"><div class="google_plusone_iframe_widget" style="width: 90px; height: 25px;"><span><div id="___plusone_1" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 90px; height: 20px; background: transparent;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1467704269119" name="I0_1467704269119" src="images/fastbutton.html" data-gapiattached="true" title="+1"></iframe></div></span></div></a>
-                    <a href="#" class="addthis_button_tweet at300b"><div class="tweet_iframe_widget" style="width: 62px; height: 25px;"><span><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.b7de008f493a5185d8df1aedd62d77c6.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fmagazine3.com%2Fdemo%2Fnewspapertimes%2Ftransformers-dark-of-the-moon-movie-review%2F&amp;size=m&amp;text=Transformers%3A%20Dark%20of%20the%20Moon%20Movie%20Review&amp;time=1467704272451&amp;type=share&amp;url=http%3A%2F%2Fmagazine3.com%2Fdemo%2Fnewspapertimes%2Ftransformers-dark-of-the-moon-movie-review%2F%23.V3tjv2V65NM.twitter" style="position: static; visibility: visible; width: 60px; height: 20px;" data-url="http://magazine3.com/demo/newspapertimes/transformers-dark-of-the-moon-movie-review/#.V3tjv2V65NM.twitter"></iframe></span></div></a>
-                    <a class="addthis_counter addthis_pill_style addthis_nonzero" href="#" style="display: inline-block;"></a><a href="#" class="atc_s addthis_button_compact"><span></span></a><a class="addthis_button_expanded" target="_blank" title="View more services" href="http://magazine3.com/demo/newspapertimes/transformers-dark-of-the-moon-movie-review/#">2</a>
-                    <div class="atclear"></div></div>
-                <script type="text/javascript" src="images/addthis_widget.js"></script>
-                <!-- AddThis Button END -->
-            </div>
-            <div class="cb"></div></div>
 
 
         <div class="related">

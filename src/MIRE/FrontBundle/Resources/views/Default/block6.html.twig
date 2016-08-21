@@ -1,38 +1,26 @@
 <div id="colorcontentblock">
-    <div id="colorcontenth3_small" class="custom6"><a href="#" title="">Malagasy</a></div>
+    <div id="colorcontenth3_small" class="custom6"><a href="#" title="">{% for c in categorieblock6 %}
+                {{ c.nom }}
+            {% endfor %}</a></div>
 
 
 
     <div id="colorcontentwrap6_l">
         <div id="colorcontentwrap6">
-            <h2><a href="#" rel="bookmark">Roger Federer&#8217;s Switzerland face a long trip to Australia in September&#8217;s Davis Cup play-offs.</a></h2>
-
-
-
-            <a href="#"><img width="220" height="146" src="{{ asset('bundles/front/images/Roger-Federers-Switzerland-face-a-long-trip-to-Australia-in-Septembers-Davis-Cup-play-offs-220x146.jpg')}}" class="attachment-colorcontentblock6 " alt="" /></a>
-
-
-
-
-
-
-
-
-            <p>The Swiss must win the tie to return to the World Group &#8211; the top tier of the competition &#8211; in 2012.
-                Federer&nbsp;<a href='#'>More...</a></p>
+            <h2><a href="#" rel="bookmark">{{ articlesblock6big.titre }}</a></h2>
+            <a href="#"><img width="220" height="146" src="{{ asset('uploads/img/')}}{{ articlesblock6big.image }}" class="attachment-colorcontentblock6 " alt="" /></a>
+        <p>{{ articlesblock6big.contenu[:650]|raw }}&nbsp;<a href='#'>more ...</a></p>
             <div class="cb"></div>
         </div>
     </div>
     <div id="colorcontentwrap6_r">
+        {% for article in articlesblock6 %}
         <div id="colorcontentwrap6_a">
-            <h2><a href="#" rel="bookmark">Shaq: Heat will be back, LeBron hate was fair</a></h2>
-            Shaquille O&#8217;Neal guarantees that the Miami Heat will return to the NBA Finals and says the harsh treatment of LeBron James..
+            <h2><a href="#" rel="bookmark">{{ article.titre }}</a></h2>
+            {{ article.contenu[:750]|raw }} ...</p>
             <div class="cb"></div>
         </div>
-        <div id="colorcontentwrap6_a">
-            <h2><a href="#" rel="bookmark">Marco Simoncelli topped the times in the second practice German Grand Prix.</a></h2>
-            The Honda Gresini rider posted a best time of one minute 22.225 seconds, over half a second quicker than his time..
-            <div class="cb"></div>
-        </div>
+        {% endfor %}
+
     </div> <div class="cb"></div>
 </div>

@@ -13,9 +13,9 @@ class ArticleRepository extends \Doctrine\ORM\EntityRepository
 {
     public function findByCategorie($categorie_id)
     {
-        $query  = $this->_em->createQuery('SELECT a FROM MIRE\AdminBundle\Entity\Article a JOIN a.categories c WHERE c.id = :id ORDER BY a.id');
+        $query  = $this->_em->createQuery('SELECT a FROM MIRE\AdminBundle\Entity\Article a JOIN a.categories c WHERE c.id = :id ORDER BY a.id ' );
         $query->setParameter('id',$categorie_id);
-        return $query->getResult();
+        return $query->setMaxResults(3)->getResult();
     }
     public function findByCategorieLast($categorie_id)
     {
@@ -28,7 +28,7 @@ class ArticleRepository extends \Doctrine\ORM\EntityRepository
     {
         $query  = $this->_em->createQuery('SELECT a FROM MIRE\AdminBundle\Entity\Article a JOIN a.categories c WHERE c.place = :place  ORDER BY a.id');
         $query->setParameter('place',$place_num);
-        return $query->getResult();
+        return $query->setMaxResults(3)->getResult();
     }
     public function findByPlaceLast($place_num)
     {
