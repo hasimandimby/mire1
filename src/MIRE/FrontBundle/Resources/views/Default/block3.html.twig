@@ -8,7 +8,7 @@
         </a></div>
     {% for article in  articlesblock3 %}
     <div id="colorcontentwrap3">
-        <h2><a href="#" rel="bookmark">{{ article.titre }}</a></h2>
+        <h2><a href="article/{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h2>
 
         <a href="#">
         {% if article.image != '' %}

@@ -16,7 +16,7 @@
     <div id="colorcontentwrap6_r">
         {% for article in articlesblock6 %}
         <div id="colorcontentwrap6_a">
-            <h2><a href="#" rel="bookmark">{{ article.titre }}</a></h2>
+            <h2><a href="article/{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h2>
             {{ article.contenu[:750]|raw }} ...</p>
             <div class="cb"></div>
         </div>

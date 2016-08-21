@@ -22,11 +22,11 @@ class InscriptionController extends Controller
             $em->flush();
             $request->getSession()->getFlashBag()->add('notice', 'bien enregistré.');
 
-            return $this->redirect($this->generateUrl('mire_abonnement_add'));
+            return $this->redirect($this->generateUrl('mire_front_inscription_suite'));
         }
         return $this->render('MIREFrontBundle:inscription:index.html.twig', array('form' => $form->createView(),));
     }
-    public function abonnementAction(Request $request)
+    public function suiteAction(Request $request)
     {
         $abonemt = new Abonemt();
         $form = $this->createForm(AbonemtType::Class,$abonemt);
@@ -36,7 +36,7 @@ class InscriptionController extends Controller
             $em->flush();
             $request->getSession()->getFlashBag()->add('notice', 'bien enregistré.');
 
-            return $this->redirect($this->generateUrl('mire_abonnement_add'));
+            return $this->redirect($this->generateUrl('mire_front_homepage'));
         }
         return $this->render('MIREFrontBundle:inscription:index.html.twig', array('form' => $form->createView(),));
     }

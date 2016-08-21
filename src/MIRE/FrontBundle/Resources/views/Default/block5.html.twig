@@ -3,7 +3,7 @@
                 {{ c.nom }}
             {% endfor %}</a></div>
     <div id="colorcontentwrap5">
-        <h2><a href="#" rel="bookmark">{{  articlesblock5big.titre }}</a></h2>
+        <h2><a href="article/{{  articlesblock5big.titre }}" rel="bookmark">{{  articlesblock5big.titre }}</a></h2>
 
         <a href="#"><img width="220" height="288" src="{{ asset('uploads/img/')}}{{ articlesblock5big.image }}" class="attachment-colorcontentblock5 " alt="" /></a>
 
@@ -12,7 +12,7 @@
     </div>
     {% for article in articlesblock5 %}
     <div id="colorcontentwrap5">
-        <h3><a href="#" rel="bookmark">{{ article.titre }}</a></h3>
+        <h3><a href="article/{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h3>
         <div class="cb"></div>
     </div>
     {%  endfor %}
