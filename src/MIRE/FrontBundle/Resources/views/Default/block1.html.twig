@@ -8,7 +8,7 @@
     </div>
     {% for article in articlesblock1 %}
     <div id="colorcontentwrap">
-        <h3><a href="{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h3>
+        <h3><a href="article/{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h3>
 
 
         <a href="#"><img width="146" height="85" src="{{ asset('uploads/img/')}}{{ article.image }}" class="attachment-colorcontentblock1 " alt="" /></a>

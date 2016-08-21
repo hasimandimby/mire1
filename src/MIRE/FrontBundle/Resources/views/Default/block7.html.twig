@@ -4,7 +4,7 @@
             {% endfor %}</a></div>
     <div id="colorcontentwrap7_l">
         <div id="colorcontentwrap7">
-            <h2><a href="#" rel="bookmark">{{ articlesblock7big.titre }}</a></h2>
+            <h2><a href="article/{{ articlesblock7big.titre }}" rel="bookmark">{{ articlesblock7big.titre }}</a></h2>
             <a href="#"><img width="220" height="146" src="{{ asset('uploads/img/')}}{{ articlesblock7big.image }}" class="attachment-colorcontentblock6 " alt="" /></a>
 
             <p>
@@ -15,7 +15,7 @@
     <div id="colorcontentwrap7_r">
         {% for article in articlesblock7 %}
         <div id="colorcontentwrap7_a">
-            <h2><a href="#" rel="bookmark">{{ article.image }}</a></h2>
+            <h2><a href="{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h2>
             {{ article.contenu[:750]|raw }} .....
             <div class="cb"></div>
         </div>

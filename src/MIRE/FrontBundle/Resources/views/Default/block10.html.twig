@@ -4,9 +4,9 @@
 {% for article in articlesblock10 %}
 <div id="colorcontentblock" class="colorcontentwrap10">
     <div id="colorcontentwrap10">
-        <a href="#"><img width="210" height="146" src="{{ asset('uploads/img/')}}{{ article.image }}" class="attachment-colorcontentblock10 " alt="" /></a>
+        <a href="article/{{ article.titre }}"><img width="210" height="146" src="{{ asset('uploads/img/')}}{{ article.image }}" class="attachment-colorcontentblock10 " alt="" /></a>
 
-        <h3><a href="#" rel="bookmark">{{ article.titre }}</a></h3>
+        <h3><a href="article/{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h3>
         You may love your city, but do you love it enough to want to tell the world about it? iReporter Elaine Baricante does...
         <div class="cb"></div>
     </div>

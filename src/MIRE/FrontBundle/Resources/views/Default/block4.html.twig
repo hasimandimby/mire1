@@ -8,7 +8,7 @@
     <div id="colorcontentwrap4">
         <h2>
             <a href="#"><img width="205" height="120" src="{{ asset('uploads/img/')}}{{ article.image }}" class="attachment-colorcontentblock4 " alt="" /></a>
-            <a href="#" rel="bookmark">{{ article.titre }}</a></h2>
+            <a href="article/{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h2>
         {{ article.contenu[:650]|raw }} ...
         <div class="cb"></div>
     </div>

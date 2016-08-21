@@ -58,7 +58,9 @@
                     <div style="margin-top:5px;text-align:center;"><a href="#" rel="tag">John Malkovich</a><a href="#" rel="tag">Josh Duhamel</a><a href="#" rel="tag">Ken Jeong</a><a href="#" rel="tag">Michael Bay</a><a href="#" rel="tag">Shia LaBeouf</a><a href="#" rel="tag">Tyrese Gibson</a></div>
                 </div>
             </div>
-            {{ article.contenu|raw }}
+            <br />
+            <img src="{{ asset('uploads/img/') }}{{ article.image }}" alt="" border="0">
+            {{ article.contenu[:2000]|raw }}
 
 
 

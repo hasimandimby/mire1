@@ -6,13 +6,13 @@
     <a href="#"><img width="384" height="217" src="{{ asset('uploads/img/')}}{{ articlesblock2big.image }}" class="attachment-colorcontentblock2 " alt="" /></a>
     <div id="colorcontentwrap2">
 
-        <h2><a href="#" rel="bookmark">{{  articlesblock2big.titre }}</a></h2>
+        <h2><a href="article/{{  articlesblock2big.titre }}" rel="bookmark">{{  articlesblock2big.titre }}</a></h2>
         <p>  {{ articlesblock2big.contenu[:650]|raw }}<a href='#'> More...</a></p>
         <div class="cb"></div>
     </div>
     {% for  article in articlesblock2 %}
     <div id="colorcontentwrap2">
-        <h2><a href="#" rel="bookmark">{{ article.titre }}</a></h2>
+        <h2><a href="article/{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h2>
 
         <p> {{ article.contenu[:650]|raw }}<a href='#'> More...</a></p>
         <div class="cb"></div>
