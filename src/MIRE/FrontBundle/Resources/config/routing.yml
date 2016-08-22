@@ -22,6 +22,10 @@ mire_front_inscription_suite:
     path:     /inscription/suite
     defaults: { _controller: MIREFrontBundle:Inscription:suite }
 
+mire_front_authentification:
+    path:     /inscription/authentification
+    defaults: { _controller: MIREFrontBundle:Inscription:connexion }
+
 mire_front_page:
     path:     /article
     defaults: { _controller: MIREFrontBundle:Page:index }
