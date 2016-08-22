@@ -40,6 +40,24 @@ class InscriptionController extends Controller
         }
         return $this->render('MIREFrontBundle:inscription:index.html.twig', array('form' => $form->createView(),));
     }
+    public function connexionAction(Request $request)
+    {
+        $client = new Client();
+        $p = $request->get('submit');
+        $form = $this->createForm(ClientType::Class,$client);
+        if (isset($p)) {
+           
+            $email =  $request->get('email') ;
+            $mdp =  $request->get('passwd') ;
+            $em = $this->getDoctrine()->getManager();
+            $article =$em->getRepository('MIREAdminBundle:Client')->findBy(array("email"=>$email,"password" =>$mdp));
+            if(count($article)>0)
+             return $this->redirect($this->generateUrl('mire_front_inscription'));
+            else
+                return $this->redirect($this->generateUrl('mire_front_inscription_suite'));
+        }
+        return $this->render('MIREFrontBundle:inscription:index.html.twig', array('form' => $form->createView(),));
+    }
 
 
 }

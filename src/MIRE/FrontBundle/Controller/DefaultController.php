@@ -15,9 +15,11 @@ class DefaultController extends Controller
     public function launeAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $article =$em->getRepository('MIREAdminBundle:Article')->findByCategorieLast(1);
         $listearticle =$em->getRepository('MIREAdminBundle:Article')->findByCategorie(1);
-        
+        $article = new Article();
+        if(count($article) > 0)
+            $article =$em->getRepository('MIREAdminBundle:Article')->findByCategorieLast(1);
+
         return $this->render('MIREFrontBundle:Default:blockalaune.html.twig',array('article' => $article,'listearticle' => $listearticle));
     }
     public function listealauneAction()
