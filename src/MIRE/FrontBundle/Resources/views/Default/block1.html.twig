@@ -14,7 +14,7 @@
         <a href="#"><img width="146" height="85" src="{{ asset('uploads/img/')}}{{ article.image }}" class="attachment-colorcontentblock1 " alt="" /></a>
         <p>
 
-            {{ article.contenu[:700]|raw }}
+            {{ article.contenu[:600]|striptags}}
             <a href='#'>More...</a></p>
         <div class="cb"></div>
     </div>

@@ -9,7 +9,7 @@
         <h2>
             <a href="#"><img width="205" height="120" src="{{ asset('uploads/img/')}}{{ article.image }}" class="attachment-colorcontentblock4 " alt="" /></a>
             <a href="article/{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h2>
-        {{ article.contenu[:650]|raw }} ...
+        {{ article.contenu|striptags[:150] }} ...
         <div class="cb"></div>
     </div>
 

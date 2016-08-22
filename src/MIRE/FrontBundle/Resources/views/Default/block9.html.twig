@@ -5,7 +5,7 @@
 <div id="colorcontentwrap9">
     <h3><a href="article/{{ articlesblock9big.titre }}" rel="bookmark">{{ articlesblock9big.titre }}</a></h3>
     <a href="#"><img width="320" height="190" src=""{{ asset('uploads/img/')}}{{ articlesblock9big.image }}" class="attachment-colorcontentblock9 " alt="" /></a>
-    {{ articlesblock9big.contenu[:750]|raw }}..
+    {{ articlesblock9big.contenu|striptags[:150]|raw }}..
     <div class="cb"></div>
 </div>
 {%  for article in articlesblock9 %}

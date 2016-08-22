@@ -6,7 +6,7 @@
         <h3><a href="{{ articlesblock8big.titre }}" rel="bookmark">{{ articlesblock8big.titre }}</a></h3>
         <a href="#"><img width="320" height="190" src="{{ asset('uploads/img/')}}{{ articlesblock8big.image }}" class="attachment-colorcontentblock8 " alt="" /></a>
 
-        {{ articlesblock8big.titre[:750]|raw }}..
+        {{ articlesblock8big.titre|striptags[:150]|raw }}..
         <div class="cb"></div>
     </div>
     {% for article in articlesblock8 %}

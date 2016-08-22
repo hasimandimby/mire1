@@ -15,7 +15,7 @@
             <img width="173" height="137" src="{{ asset('uploads/img/')}}{{ article.image }}" class="attachment-colorcontentblock3 " alt="" />
         {% endif %}
         </a>
-        <p>{{ article.contenu[:600]|raw }} <a href='#'>More...</a></p>
+        <p>{{ article.contenu|striptags[:150]|raw }} <a href='#'>More...</a></p>
         <div class="cb"></div>
     </div>
     {% endfor %}

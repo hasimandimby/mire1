@@ -8,7 +8,7 @@
             <a href="#"><img width="220" height="146" src="{{ asset('uploads/img/')}}{{ articlesblock7big.image }}" class="attachment-colorcontentblock6 " alt="" /></a>
 
             <p>
-                {{ articlesblock7big.contenu[:750]|raw }} ...&nbsp;<a href='#'>More...</a></p>
+                {{ articlesblock7big.contenu|striptags[:150]|raw }} ...&nbsp;<a href='#'>More...</a></p>
             <div class="cb"></div>
         </div>
     </div>
@@ -16,7 +16,7 @@
         {% for article in articlesblock7 %}
         <div id="colorcontentwrap7_a">
             <h2><a href="{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h2>
-            {{ article.contenu[:750]|raw }} .....
+            {{ article.contenu|striptags[:150]|raw }} .....
             <div class="cb"></div>
         </div>
         {% endfor %}

@@ -7,14 +7,14 @@
     <div id="colorcontentwrap2">
 
         <h2><a href="article/{{  articlesblock2big.titre }}" rel="bookmark">{{  articlesblock2big.titre }}</a></h2>
-        <p>  {{ articlesblock2big.contenu[:650]|raw }}<a href='#'> More...</a></p>
+        <p>  {{ articlesblock2big.contenu|striptags[:250]|raw }}<a href='#'> More...</a></p>
         <div class="cb"></div>
     </div>
     {% for  article in articlesblock2 %}
     <div id="colorcontentwrap2">
         <h2><a href="article/{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h2>
 
-        <p> {{ article.contenu[:650]|raw }}<a href='#'> More...</a></p>
+        <p> {{ article.contenu|striptags[:250]|raw }}<a href='#'> More...</a></p>
         <div class="cb"></div>
     </div>
     {% endfor %}
