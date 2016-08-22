@@ -7,6 +7,7 @@ use \MIRE\AdminBundle\Entity\Article;
 
 use MIRE\AdminBundle\Entity\Client;
 use MIRE\FrontBundle\Form\ClientType;
+use MIRE\FrontBundle\Form\AbonemtType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -28,17 +29,8 @@ class InscriptionController extends Controller
     }
     public function suiteAction(Request $request)
     {
-        $abonemt = new Abonemt();
-        $form = $this->createForm(AbonemtType::Class,$abonemt);
-        if ($form->handleRequest($request)->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($abonemt);
-            $em->flush();
-            $request->getSession()->getFlashBag()->add('notice', 'bien enregistré.');
 
-            return $this->redirect($this->generateUrl('mire_front_homepage'));
-        }
-        return $this->render('MIREFrontBundle:inscription:index.html.twig', array('form' => $form->createView(),));
+        return $this->render('MIREFrontBundle:inscription:suite.html.twig');
     }
     public function connexionAction(Request $request)
     {

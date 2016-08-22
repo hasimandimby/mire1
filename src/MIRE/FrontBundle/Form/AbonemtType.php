@@ -1,6 +1,6 @@
 <?php
 
-namespace MIRE\AdminBundle\Form;
+namespace MIRE\FrontBundle\Form;
 
 
 use Symfony\Component\Form\AbstractType;
