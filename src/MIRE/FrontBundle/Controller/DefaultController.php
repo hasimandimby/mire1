@@ -17,7 +17,7 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
         $listearticle =$em->getRepository('MIREAdminBundle:Article')->findByCategorie(1);
         $article = new Article();
-        if(count($article) > 0)
+        if(count($listearticle) > 0)
             $article =$em->getRepository('MIREAdminBundle:Article')->findByCategorieLast(1);
 
         return $this->render('MIREFrontBundle:Default:blockalaune.html.twig',array('article' => $article,'listearticle' => $listearticle));
@@ -60,7 +60,7 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getEntityManager();
         $articlesblock2 = $em->getRepository("MIREAdminBundle:Article")->findByPlace(2);
         $categorieblock2 = $em->getRepository("MIREAdminBundle:Categories")->findBy(array("place"=>2));
-        $articlesblock1big = new Article();
+        $articlesblock2big = new Article();
         if(count($articlesblock2) > 0)
         $articlesblock2big = $em->getRepository("MIREAdminBundle:Article")->findByPlaceLast(2);
         return $this->render('MIREFrontBundle:Default:block2.html.twig',array('categorieblock2' => $categorieblock2 ,'articlesblock2' => $articlesblock2 ,'articlesblock2big' =>$articlesblock2big ));
