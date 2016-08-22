@@ -59,7 +59,13 @@ class CategoriesController extends Controller
     }
     public function deleteAction($id)
     {
-        return $this->render('MIREAdminBundle:Categories:delete.html.twig', array('id' => $id ));
+        $em = $this->getDoctrine()
+            ->getManager();
+        $categories = $em ->getRepository('MIREAdminBundle:Categories')
+            ->find($id);
+        $em->remove($categories);
+        $em->flush();
+        return $this->redirect($this->generateUrl('mire_categories_liste'));
     }
 
 

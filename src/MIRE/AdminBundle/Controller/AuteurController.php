@@ -68,7 +68,13 @@ class AuteurController extends Controller
 
     public function deleteAction($id)
     {
-        return $this->render('MIREAdminBundle:Auteur:delete.html.twig', array('id' => $id));
+        $em = $this->getDoctrine()
+            ->getManager();
+        $auteur = $em ->getRepository('MIREAdminBundle:Auteur')
+            ->find($id);
+        $em->remove($auteur);
+        $em->flush();
+        return $this->redirect($this->generateUrl('mire_auteur_liste'));
     }
 
 
