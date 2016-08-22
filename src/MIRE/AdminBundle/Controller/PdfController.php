@@ -42,7 +42,13 @@ class PdfController extends Controller
     }
     public function deleteAction($id)
     {
-        return $this->render('MIREAdminBundle:Pdf:delete.html.twig', array('id' => $id ));
+        $em = $this->getDoctrine()
+            ->getManager();
+        $pdf = $em ->getRepository('MIREAdminBundle:Pdf')
+            ->find($id);
+        $em->remove($pdf);
+        $em->flush();
+        return $this->redirect($this->generateUrl('mire_pdf_liste'));
     }
 
 
