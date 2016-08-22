@@ -1,21 +1,8 @@
+{% for article in listearticle %}
 <div class="home-post-wrap">
     <div class="thumbnail-div" style="">
-        <a href="#" title=""><span class="header"><img width="216" height="125" src="{{ asset('bundles/front/images/Pawlenty-Draws-Attention-With-Debt-Ceiling-Rhetoric-216x125.jpg')}}" class="attachment-featgalimg " alt="" /></span>      </a>
+        <a href="article/{{ article.titre }}" title=""><span class="header"><img width="216" height="125" src="{{ asset('uploads/img/')}}{{ article.image }}" class="attachment-featgalimg " alt="" /></span>      </a>
     </div>
-    <h2><a href="#" title="" class="the2title">Pawlenty Draws Attention With Debt Ceiling Rhetoric, But Sends Mixed Signals On Action</a> </h2>
+    <h2><a href="#" title="" class="the2title">{{ article.titre }}</a> </h2>
 </div>
-
-
-<div class="home-post-wrap">
-    <div class="thumbnail-div" style="">
-        <a href="#" title=""><span class="header"><img width="216" height="125" src="{{ asset('bundles/front/images/Tea-Party-Polls-Show-Importance-To-GOP-Base-216x125.jpg')}}" class="attachment-featgalimg " alt="" /></span></a> </div>
-    <h2><a href="#" title="" class="the2title">Tea Party: Polls Show Importance To GOP Base</a></h2>
-</div>
-
-
-<div class="home-post-wrap">
-    <div class="thumbnail-div" style="">
-        <a href="#" title=""><span class="header"><img width="216" height="125" src="{{ asset('bundles/front/images/Republicans-target-Raleigh-Democrat-Brad-Miller-for-his-work-on-financial-reform-216x125.jpg')}}" class="attachment-featgalimg'}}" alt="" /></span></a>
-    </div>
-    <h2><a href="#" title="" class="the2title"> Republicans target Raleigh Democrat Brad Miller for his work on financial reform</a>                        </h2>
-</div>
+{% endfor %}
