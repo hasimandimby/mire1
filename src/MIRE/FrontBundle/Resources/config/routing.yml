@@ -11,8 +11,8 @@ mire_front_contact:
     defaults: { _controller: MIREFrontBundle:Contact:index }
 
 mire_front_categorie:
-    path:     /categorie
-    defaults: { _controller: MIREFrontBundle:Categorie:index }
+    path:     /categorie/{nom}
+    defaults: { _controller: MIREFrontBundle:Categorie:index,nom:nom }
 
 mire_front_inscription:
     path:     /inscription

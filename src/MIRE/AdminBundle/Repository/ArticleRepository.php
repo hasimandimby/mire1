@@ -19,23 +19,24 @@ class ArticleRepository extends \Doctrine\ORM\EntityRepository
     }
     public function findByCategorieLast($categorie_id)
     {
-        $query  = $this->_em->createQuery('SELECT a FROM MIRE\AdminBundle\Entity\Article a JOIN a.categories c WHERE c.id = :id ORDER BY a.id');
+        $query  = $this->_em->createQuery('SELECT a FROM MIRE\AdminBundle\Entity\Article a JOIN a.categories c WHERE c.id = :id ORDER BY a.id DESC');
         $query->setParameter('id',$categorie_id);
         return $query->setMaxResults(1)->getSingleResult();
     }
 
     public function findByPlace($place_num)
     {
-        $query  = $this->_em->createQuery('SELECT a FROM MIRE\AdminBundle\Entity\Article a JOIN a.categories c WHERE c.place = :place  ORDER BY a.id');
+        $query  = $this->_em->createQuery('SELECT a FROM MIRE\AdminBundle\Entity\Article a JOIN a.categories c WHERE c.place = :place  ORDER BY a.id DESC');
         $query->setParameter('place',$place_num);
         return $query->setMaxResults(3)->getResult();
     }
     public function findByPlaceLast($place_num)
     {
-        $query  = $this->_em->createQuery('SELECT a FROM MIRE\AdminBundle\Entity\Article a JOIN a.categories c WHERE c.place = :place  ORDER BY a.id');
+        $query  = $this->_em->createQuery('SELECT a FROM MIRE\AdminBundle\Entity\Article a JOIN a.categories c WHERE c.place = :place  ORDER BY a.id DESC');
         $query->setParameter('place',$place_num);
         return $query->setMaxResults(1)->getSingleResult();
     }
+
     public function testCode()
     {
         $query  = $this->_em->createQuery('SELECT a FROM MIRE\AdminBundle\Entity\Article a');

@@ -10,9 +10,12 @@ class ArticleController extends Controller
 {
     public function indexAction($titre , Request $request)
     {
-        $article = $this->getDoctrine()
+        $articles = $this->getDoctrine()
             ->getManager()
             ->getRepository('MIREAdminBundle:Article')->findBy(array("titre" =>$titre));
-        return $this->render('MIREFrontBundle:Article:index.html.twig',array('articles' => $article));
+        $lastarticle = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('MIREAdminBundle:Article')->findBy(array(), array('id' => 'DESC'),4);
+        return $this->render('MIREFrontBundle:Article:index.html.twig',array('articles' => $articles,"lastarticle" => $lastarticle));
     }
 }

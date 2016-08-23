@@ -1,8 +1,7 @@
 <div class="title">Fil info</div>
 <ul id="once">
-    <li><a href="#" title="">Dalai Lama Visit: President Obama Meets Spiritual Leader, China Complains </a></li>
-    <li><a href="#" title="">A Texas Two-Step: When Rick Perry Backed Al Gore</a></li>
-    <li><a href="#" title="">News Corp. Reports $125K In 2011 Political Donations </a></li>
-    <li><a href="#" title="">Pawlenty  Draws Attention With Debt Ceiling Rhetoric, But Sends Mixed Signals On Action</a></li>
-    <li><a href="#" title="">Tea Party:Polls Show Importance To GOP Base </a></li>
+    {% for article in lastarticle %}
+    <li><a href="/article/{{ article.titre }}" title=""> {{ article.titre }} </a></li>
+    {% endfor %}
+
 </ul>

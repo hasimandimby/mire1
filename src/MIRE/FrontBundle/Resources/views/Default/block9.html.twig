@@ -1,24 +1,24 @@
 <div id="colorcontentblock">
-    <div id="colorcontenth3_small" class="custom7"><a href="#" title="">{% for c in categorieblock7 %}
+    <div id="colorcontenth3_small" class="custom7"><a href="#" title="">{% for c in categorieblock9 %}
                 {{ c.nom }}
             {% endfor %}</a></div>
     <div id="colorcontentwrap7_l">
         <div id="colorcontentwrap7">
-            <h2><a href="article/{{ articlesblock7big.titre }}" rel="bookmark">{{ articlesblock7big.titre }}</a></h2>
-            <a href="#"><img width="220" height="146" src="{{ asset('uploads/img/')}}{{ articlesblock7big.image }}" class="attachment-colorcontentblock6 " alt="" /></a>
+            <h2><a href="article/{{ articlesblock9big.titre }}" rel="bookmark">{{ articlesblock9big.titre }}</a></h2>
+            <a href="#"><img width="220" height="146" src="{{ asset('uploads/img/')}}{{ articlesblock9big.image }}" class="attachment-colorcontentblock6 " alt="" /></a>
 
             <p>
-                {{ articlesblock7big.contenu|striptags[:150]|raw }} ...&nbsp; <a href='article/{{ articlesblock7big.titre }}'>Lire la suite...</a></p>
+                {{ articlesblock9big.contenu|striptags[:150]|raw }} ...&nbsp; <a href='article/{{ articlesblock9big.titre }}'>Lire la suite...</a></p>
             <div class="cb"></div>
         </div>
     </div>
     <div id="colorcontentwrap7_r">
-        {% for article in articlesblock7 %}
-        <div id="colorcontentwrap7_a">
-            <h2><a href="{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h2>
-            {{ article.contenu|striptags[:150]|raw }} .....
-            <div class="cb"></div>
-        </div>
+        {% for article in articlesblock9 %}
+            <div id="colorcontentwrap7_a">
+                <h2><a href="{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h2>
+                {{ article.contenu|striptags[:150]|raw }} .....
+                <div class="cb"></div>
+            </div>
         {% endfor %}
     </div> <div class="cb"></div>
 </div>

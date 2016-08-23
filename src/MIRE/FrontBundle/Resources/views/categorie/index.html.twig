@@ -7,11 +7,11 @@
             <div id="featbig">
 
                 <div class="featbig">
-                    <h2><a href="#" rel="bookmark">Global Warming: Nature Can’t Save Us From Ourselves</a></h2>
-                    <a href="#"><img width="418" height="215" src="images/globalwarming-418x215.jpg" class="attachment-featbigimg wp-post-image" alt="Global Warming"></a>
+                    <h2><a href="/article/{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h2>
+                    <a href="/article/{{ article.titre }}"><img width="418" height="215" src="{{ asset('uploads/img/') }}{{ article.image }}" class="attachment-featbigimg wp-post-image" alt="Global Warming"></a>
 
-                    <p>The notion that nature itself will act as a check on the atmospheric excesses of humanity has long held a fair amount of appeal, not least because it draws on a nugget of high-school science that most people can quickly comprehend. Plants inhale carbon dioxide, after all — they need it to grow. Add more CO2 to the air, as human civilization has&nbsp;<a href="#">More...</a></p>
-                    <div id="featbig-author" style="margin-top:5px;">by <a href="#" title="View all posts by Matt">Matt</a> | Published 5 years  ago</div>
+                    <p>{{ article.contenu|striptags[:450]|raw }}&nbsp;<a href="#">lire la suite...</a></p>
+                    <div id="featbig-author" style="margin-top:5px;">by <a href="#" title="View all posts by Matt">{{ article.auteur.nom }}</a> | Published 5 years  ago</div>
                     <div class="cb"></div>
                 </div>
             </div>
@@ -20,109 +20,22 @@
 
         <div id="coloredblock4">
             <div id="colorcontentblock">
-
+            {% for art in articles %}
                 <div id="colorcontentwrap4">
 
 
-                    <a href="#"><img width="205" height="120" src="images/Obama-Administration-And-Wildlife-Advocates-Strike-Deal-On-Endangered-Species-Act-Protections-205x120.jpg" class="attachment-colorcontentblock4 wp-post-image" alt="Obama Administration And Wildlife Advocates Strike Deal On Endangered Species Act Protections"></a>
-
-
-
-
-
-
-                    <div class="meta_author">    <div id="meta_authorl"> <a href="#">By </a><a href="#" title="View all posts by Matt">Matt </a>   On Thursday, July 14th, 2011  </div>
+                    <a href="/article/{{ art.titre }}"><img width="205" height="120" src="{{ asset('uploads/img/') }}{{ art.image }}" class="attachment-colorcontentblock4 wp-post-image" alt="{{ art.titre }}"></a>
+                      <div class="meta_author">    <div id="meta_authorl"> <a href="#">By </a><a href="#" title="View all posts by Matt">{{ art.auteur.nom }} </a>  {{ art.date|date('d-M-Y') }}  </div>
                         <div id="meta_authorr">
                             0 Comments
                         </div>  <div class="cb"></div>
                     </div>
-                    <h2>   <a href="#" rel="bookmark">Obama Administration And Wildlife Advocates Strike Deal On Endangered Species Act Protections</a></h2>
+                    <h2>   <a href="/article/{{ art.titre }}" rel="bookmark">{{ art.titre }}</a></h2>
 
-                    <p>A federal judge was asked Tuesday to approve a pair of deals between the Obama administration and wildlife advocates that would require the government to consider greater protections for hundreds of imperiled animals&nbsp;<a href="#">More...</a></p>
+                    <p>{{ article.contenu|striptags[:450]|raw }}&nbsp;<a href="/article/{{ art.titre }}">More...</a></p>
                     <div class="cb"></div>
                 </div>
-
-                <div id="colorcontentwrap4">
-
-
-                    <a href="#"><img width="205" height="120" src="images/California-Deploys-Wasps-Scientists-Highlight-More-Green-Alternatives-To-Pesticides-205x120.jpg" class="attachment-colorcontentblock4 wp-post-image" alt="California Deploys Wasps, Scientists Highlight More Green Alternatives To Pesticides"></a>
-
-
-
-
-
-
-                    <div class="meta_author">    <div id="meta_authorl"> <a href="#">By </a><a href="#" title="View all posts by Matt">Matt </a>   On Thursday, July 14th, 2011  </div>
-                        <div id="meta_authorr">
-                            0 Comments
-                        </div>  <div class="cb"></div>
-                    </div>
-                    <h2>   <a href="#" rel="bookmark">California Deploys Wasps, Scientists Highlight More Green Alternatives To Pesticides</a></h2>
-
-                    <p>The 15 million wasp eggs scattered across neighborhoods in Sacramento and San Luis Obispo counties represent a rare return to historical methods of pest control.
-                        Deployed last week, the eggs will soon give rise&nbsp;<a href="#">More...</a></p>
-                    <div class="cb"></div>
-                </div>
-
-                <div id="colorcontentwrap4">
-
-
-                    <a href="#"><img width="205" height="120" src="images/Carbon-Capture-Project-By-American-Electric-Power-Co.-Put-On-Hold-205x120.jpg" class="attachment-colorcontentblock4 wp-post-image" alt="Carbon Capture Project By American Electric Power Co. Put On Hold"></a>
-
-
-
-
-
-
-                    <div class="meta_author">    <div id="meta_authorl"> <a href="#">By </a><a href="#" title="View all posts by Matt">Matt </a>   On Thursday, July 14th, 2011  </div>
-                        <div id="meta_authorr">
-                            0 Comments
-                        </div>  <div class="cb"></div>
-                    </div>
-                    <h2>   <a href="#" rel="bookmark">Carbon Capture Project By American Electric Power Co. Put On Hold</a></h2>
-
-                    <p>American Electric Power Co. said Thursday it was putting a hold on its plans for a commercial-scale carbon dioxide capture and storage project in West Virginia because of uncertainty surrounding U.S. climate policy&nbsp;<a href="#">More...</a></p>
-                    <div class="cb"></div>
-                </div>
-
-                <div id="colorcontentwrap4">
-
-
-                    <a href="#"><img width="205" height="120" src="images/The-Importance-Of-Scooping-Your-Dogs-Poo-205x120.jpg" class="attachment-colorcontentblock4 wp-post-image" alt="The Importance Of Scooping Your Dog's Poo"></a>
-
-
-
-                    <div class="meta_author">    <div id="meta_authorl"> <a href="#">By </a><a href="#" title="View all posts by Matt">Matt </a>   On Thursday, July 14th, 2011  </div>
-                        <div id="meta_authorr">
-                            2 Comments
-                        </div>  <div class="cb"></div>
-                    </div>
-                    <h2>   <a href="#" rel="bookmark">The Importance Of Scooping Your Dog’s Poo</a></h2>
-
-                    <p>Performer Martin Luther sings to the familiar tune of Blackstreet’s “No Diggity” as he swoops in to “bag it up” — the artist’s hand shielded by a plastic doggie bag, of&nbsp;<a href="#">More...</a></p>
-                    <div class="cb"></div>
-                </div>
-
-                <div id="colorcontentwrap4">
-
-
-                    <a href="#"><img width="205" height="120" src="images/Yellowstone-River-Exxon-To-Drain-Oil-From-Failed-Pipeline-205x120.jpg" class="attachment-colorcontentblock4 wp-post-image" alt="Yellowstone River: Exxon To Drain Oil From Failed Pipeline"></a>
-
-
-
-
-
-
-                    <div class="meta_author">    <div id="meta_authorl"> <a href="#">By </a><a href="#" title="View all posts by Matt">Matt </a>   On Thursday, July 14th, 2011  </div>
-                        <div id="meta_authorr">
-                            0 Comments
-                        </div>  <div class="cb"></div>
-                    </div>
-                    <h2>   <a href="#" rel="bookmark">Yellowstone River: Exxon To Drain Oil From Failed Pipeline</a></h2>
-
-                    <p>LAUREL, Mont. — Exxon Mobil Corp. said Wednesday that it plans to use vacuum trucks to suck any remaining oil from a failed pipeline near Laurel that spilled an estimated 42,000 gallons of crude into the Yellowstone&nbsp;<a href="#">More...</a></p>
-                    <div class="cb"></div>
-                </div>
+                {% endfor %}
 
                 <div class="cb"></div>
             </div>
@@ -130,4 +43,10 @@
 
 
     </div>
+{% endblock %}
+{% block menu %}
+    {{ render(controller("MIREFrontBundle:Default:menu")) }}
+{% endblock %}
+{% block filinfo %}
+    {{ render(controller("MIREFrontBundle:Default:filinfo")) }}
 {% endblock %}

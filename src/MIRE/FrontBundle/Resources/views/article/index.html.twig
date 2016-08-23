@@ -1,31 +1,17 @@
 {% extends 'basefront2.html.twig' %}
+{% block menu %}
+    {{ render(controller("MIREFrontBundle:default:menu")) }}
+{% endblock %}
 {% block content %}
 <div id="homepost">
-
-
 {%  for article in articles %}
-
-
     <div id="datemeta">
-        <div id="datemeta_l"><b>Published On:</b> Thu, Jul 7th, 2011 </div>
-        <div id="datemeta_r"><a href="#" title="View all posts in Featured" rel="category tag">Featured</a> / <a href="#" title="View all posts in Movie Reviews" rel="category tag">Movie Reviews</a> | By <b><a href="#" title="View all posts by Matt">Matt </a></b>    </div>
+        <div id="datemeta_l"><b>Published On:</b>{{ article.date|date('d-M-y')  }} </div>
+        <div id="datemeta_r"><a href="#" title="View all posts in Featured" rel="category tag">{% for c in article.categories %} {{ c.nom }} / {% endfor %}</a> | By <b><a href="#" title="View all posts by Matt">{{ article.auteur.nom }} </a></b>    </div>
         <div class="cb"></div>
     </div>
-
-
-
-
     <div class="post">
-
-
-
         <h1 class="posttitle"> {{ article.titre }} </h1>
-
-
-
-
-
-
         <div class="entry">
 
             <div id="metabox"><div id="metabox_share">Share This</div>
@@ -54,8 +40,8 @@
 
                         <li style="margin-left:9px;"><a href="#"><img src="{{ asset('bundles/front') }}/images/subscribe_rss.png" alt="" border="0"></a></li>
                     </ul> </div>
-                <div class="ptags"><span class="ptags_heading">Tags</span>
-                    <div style="margin-top:5px;text-align:center;"><a href="#" rel="tag">John Malkovich</a><a href="#" rel="tag">Josh Duhamel</a><a href="#" rel="tag">Ken Jeong</a><a href="#" rel="tag">Michael Bay</a><a href="#" rel="tag">Shia LaBeouf</a><a href="#" rel="tag">Tyrese Gibson</a></div>
+                <div class="ptags"><span class="ptags_heading">TAGS</span>
+                    <div style="margin-top:5px;text-align:center;"><a> {{ article.motcle|raw }} </a></div>
                 </div>
             </div>
             <br />
@@ -66,58 +52,16 @@
 
         </div>
     </div>
-
-
-
-
     <center style="font-weight: bold;"></center>
-
-
-
-
-
-
-
-
-
-
-    <div id="authorarea">
-
-        <h3>About the Author</h3>
-
-        <img alt="" src="images/11822504_917881978258118_3609850661414236466_n.jpg" class="avatar avatar-40 photo" height="40" width="40">
-
-
-        <div class="authorinfo">
-
-
-
-            <p><b><a href="#" title="Posts by Matt" rel="author">Matt</a></b> - Biographical Info - Share a little biographical information to fill out your profile. This may be shown publicly.</p>
-
-
-
-        </div>
-
-
-
-    </div>
-
-
 {% endfor %}
 
-
     <div id="related" class="clearfix">
-
-
-
-
-
-
+        {%  for art in lastarticle %}
         <div class="related">
 
             <div class="relatedpost">
 
-                <a href="#"><img width="150" height="125" src="images/Marco-Simoncelli-topped-the-times-in-the-second-practice-German-Grand-Prix-150x125.jpg" class="attachment-relatedimg wp-post-image" alt=""></a>
+                <a href="#"><img width="150" height="125" src="{{ asset('uploads/img/') }}{{ art.image }}" class="attachment-relatedimg wp-post-image" alt=""></a>
 
 
 
@@ -125,7 +69,7 @@
 
 
 
-                <h3><a href="#" rel="bookmark" title="Marco Simoncelli topped the times in the second practice German Grand Prix.">Marco Simoncelli topped the times in the second practice German Grand Prix.</a></h3>
+                <h3><a href="/article/{{ art.titre }}" rel="bookmark" title="{{ art.titre }}">{{ art.titre }}</a></h3>
 
 
 
@@ -142,133 +86,11 @@
 
 
         </div>
-
-
-
-
-
-
-
-        <div class="related">
-
-            <div class="relatedpost">
-
-                <a href="#"><img width="150" height="125" src="images/Why-Japanese-bartenders-are-the-worlds-best-150x125.jpg" class="attachment-relatedimg wp-post-image" alt=""></a>
-
-
-
-
-
-
-
-                <h3><a href="#" rel="bookmark" title="Why Japanese bartenders are the world’s best">Why Japanese bartenders are the world’s best</a></h3>
-
-
-
-
-
-
-
-            </div>
-
-
-
-
-
-
-
-        </div>
-
-
-
-
-
-
-
-        <div class="related">
-
-            <div class="relatedpost">
-
-                <a href="#"><img width="150" height="125" src="images/watermelon_slice-150x125.jpg" class="attachment-relatedimg wp-post-image" alt=""></a>
-
-
-
-
-
-
-
-                <h3><a href="#" rel="bookmark" title="What to Eat to Beat Skin Cancer">What to Eat to Beat Skin Cancer</a></h3>
-
-
-
-
-
-
-
-            </div>
-
-
-
-
-
-
-
-        </div>
-
-
-
-
-
-
-
-        <div class="related">
-
-            <div class="relatedpost">
-
-                <a href="#"><img width="150" height="125" src="images/delhi-belly-movie-poster-150x125.gif" class="attachment-relatedimg wp-post-image" alt=""></a>
-
-
-
-
-
-
-
-                <h3><a href="#" rel="bookmark" title="Delhi Belly Movie Review by Pankaj Sabnani">Delhi Belly Movie Review by Pankaj Sabnani</a></h3>
-
-
-
-
-
-
-
-            </div>
-
-
-
-
-
-
-
-        </div>
-
-
-
-
-
-
-        <div class="cb"></div>
-
-
-
-
-
-
-
+      {% endfor %}
+     <div class="cb"></div>
     </div>
-
-
-
-
-
 </div>
+{% endblock %}
+{% block filinfo %}
+    {{ render(controller("MIREFrontBundle:Default:filinfo")) }}
 {% endblock %}
