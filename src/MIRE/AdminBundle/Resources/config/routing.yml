@@ -18,6 +18,10 @@ mire_article_liste:
     path:      /article/liste
     defaults:  { _controller: MIREAdminBundle:Article:liste}
 
+mire_article_liste_slide:
+    path:      /article/listeslide
+    defaults:  { _controller: MIREAdminBundle:Article:listeslide}
+
 mire_categories_add:
     path:     /categories/add
     defaults: { _controller: MIREAdminBundle:Categories:add }

@@ -43,7 +43,7 @@ class ArticleController extends Controller
         }
 
         return $this->render('MIREAdminBundle:Article:add.html.twig', array('form' => $form->createView()));
-        }
+    }
 
 
 
@@ -88,5 +88,15 @@ class ArticleController extends Controller
 
 
             return $this->render('MIREAdminBundle:Article:liste.html.twig',array('articles' => $articles));
+    }
+    public function listeslideAction()
+    {
+        $articles = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('MIREAdminBundle:Article')
+            ->findByPlace(0);
+
+
+        return $this->render('MIREAdminBundle:Article:liste.html.twig',array('articles' => $articles));
     }
 }

@@ -32,7 +32,9 @@ class DefaultController extends Controller
     }
     public function sliderAction()
     {
-        return $this->render('MIREFrontBundle:Default:blockslider.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $listearticle =$em->getRepository('MIREAdminBundle:Article')->findByPlace(0);
+        return $this->render('MIREFrontBundle:Default:blockslider.html.twig',array('listearticles' => $listearticle));
     }
     public function filinfoAction()
     {
@@ -60,7 +62,7 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getEntityManager();
         $articlesblock2 = $em->getRepository("MIREAdminBundle:Article")->findByPlace(3);
         $categorieblock2 = $em->getRepository("MIREAdminBundle:Categories")->findBy(array("place"=>3));
-        $articlesblock1big = new Article();
+        $articlesblock2big = new Article();
         if(count($articlesblock2) > 0)
         $articlesblock2big = $em->getRepository("MIREAdminBundle:Article")->findByPlaceLast(3);
         return $this->render('MIREFrontBundle:Default:block2.html.twig',array('categorieblock2' => $categorieblock2 ,'articlesblock2' => $articlesblock2 ,'articlesblock2big' =>$articlesblock2big ));
