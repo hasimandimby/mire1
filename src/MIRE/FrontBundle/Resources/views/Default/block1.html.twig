@@ -1,24 +1,17 @@
-<div id="colorcontentblock">
+<div class="featbig">
+    <h2 style="min-height:58px;"><a href="#" title="">{{ article.titre }}</a></h2>
+    <a href="#" title=""><img src="{{ asset('uploads/img/')}}{{ article.image }}" alt="" width="418" height="" /></a>
 
+    {{ article.contenu[:750]|raw }}</p>
+    <div id="featbig-author">by <a href="#" title="">Matt</a> | Published 5 years ago</div>
+        <div id="featsmall">
+            {%
+            for art in listearticle
 
-    <div id="colorcontenth3" class="custom1">
-        <a href="#" title="">   {% for c in categorieblock1 %}
-                {{ c.nom }}
-            {% endfor %}</a>
+            %}
+        <h2><a href="#" title="">{{ art.titre }}</a></h2>
+            {% endfor %}
     </div>
-    {% for article in articlesblock1 %}
-    <div id="colorcontentwrap">
-        <h3><a href="article/{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h3>
-
-
-        <a href="#"><img width="146" height="85" src="{{ asset('uploads/img/')}}{{ article.image }}" class="attachment-colorcontentblock1 " alt="" /></a>
-        <p>
-
-            {{ article.contenu[:600]|striptags}}
-            <a href='#'>More...</a></p>
-        <div class="cb"></div>
-    </div>
-    {% endfor %}
-
+    <div class="cb"></div>
 </div>
 

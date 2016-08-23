@@ -1,14 +1,18 @@
-<div id="colorcontenth3_small" class="custom10"><a href="#" title="">{% for c in categorieblock10 %}
-            {{ c.nom }}
-        {% endfor %}</a></div>
-{% for article in articlesblock10 %}
-<div id="colorcontentblock" class="colorcontentwrap10">
-    <div id="colorcontentwrap10">
-        <a href="article/{{ article.titre }}"><img width="210" height="146" src="{{ asset('uploads/img/')}}{{ article.image }}" class="attachment-colorcontentblock10 " alt="" /></a>
+<div id="colorcontentwrap8line">
+    <div id="colorcontenth3_small" class="custom8"><a href="#" title="">{% for c in categorieblock8 %}
+                {{ c.nom }}
+            {% endfor %}</a></div>
+    <div id="colorcontentwrap8">
+        <h3><a href="{{ articlesblock8big.titre }}" rel="bookmark">{{ articlesblock8big.titre }}</a></h3>
+        <a href="#"><img width="320" height="190" src="{{ asset('uploads/img/')}}{{ articlesblock8big.image }}" class="attachment-colorcontentblock8 " alt="" /></a>
 
-        <h3><a href="article/{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h3>
-        {{ article.contenu|striptags[:150]|raw }}...
+        {{ articlesblock8big.titre|striptags[:150]|raw }}..
         <div class="cb"></div>
     </div>
+    {% for article in articlesblock8 %}
+    <div id="colorcontentwrap8">
+        <h2><a href="{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h2>
+        <div class="cb"></div>
+    </div>
+    {% endfor %}
 </div>
-{% endfor %}

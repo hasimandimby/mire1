@@ -1,0 +1,14 @@
+<div id="colorcontenth3_small" class="custom10"><a href="#" title="">{% for c in categorieblock10 %}
+            {{ c.nom }}
+        {% endfor %}</a></div>
+{% for article in articlesblock10 %}
+<div id="colorcontentblock" class="colorcontentwrap10">
+    <div id="colorcontentwrap10">
+        <a href="article/{{ article.titre }}"><img width="210" height="146" src="{{ asset('uploads/img/')}}{{ article.image }}" class="attachment-colorcontentblock10 " alt="" /></a>
+
+        <h3><a href="article/{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h3>
+        {{ article.contenu|striptags[:150]|raw }}...
+        <div class="cb"></div>
+    </div>
+</div>
+{% endfor %}

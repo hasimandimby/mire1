@@ -1,21 +1,9 @@
-<div id="colorcontentblock">
-
-    <div id="colorcontenth3" class="custom2"> <a href="#" title="">   {% for c in categorieblock2 %}
-                {{ c.nom }}
-            {% endfor %}</a><br/></div>
-    <a href="#"><img width="384" height="217" src="{{ asset('uploads/img/')}}{{ articlesblock2big.image }}" class="attachment-colorcontentblock2 " alt="" /></a>
-    <div id="colorcontentwrap2">
-
-        <h2><a href="article/{{  articlesblock2big.titre }}" rel="bookmark">{{  articlesblock2big.titre }}</a></h2>
-        <p>  {{ articlesblock2big.contenu|striptags[:250]|raw }}<a href='#'> More...</a></p>
-        <div class="cb"></div>
+{% for article in listearticle %}
+<div class="home-post-wrap">
+    <div class="thumbnail-div" style="">
+        <a href="article/{{ article.titre }}" title=""><span class="header"><img width="216" height="125" src="{{ asset('uploads/img/')}}{{ article.image }}" class="attachment-featgalimg " alt="" /></span>      </a>
     </div>
-    {% for  article in articlesblock2 %}
-    <div id="colorcontentwrap2">
-        <h2><a href="article/{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h2>
-
-        <p> {{ article.contenu|striptags[:250]|raw }}<a href='#'> More...</a></p>
-        <div class="cb"></div>
-    </div>
-    {% endfor %}
+    <h2><a href="#" title="" class="the2title">{{ article.titre }}</a> </h2>
 </div>
+{% endfor %}
+

@@ -1,19 +1,22 @@
 <div id="colorcontentblock">
-    <div id="colorcontenth3_small" class="custom5"><a href="#" title="">{% for c in categorieblock5 %}
+
+    <div id="colorcontenth3_small" class="custom3"><a href="#" title="">
+            {% for c in categorieblock3 %}
                 {{ c.nom }}
-            {% endfor %}</a></div>
-    <div id="colorcontentwrap5">
-        <h2><a href="article/{{  articlesblock5big.titre }}" rel="bookmark">{{  articlesblock5big.titre }}</a></h2>
+            {% endfor %}
 
-        <a href="#"><img width="220" height="288" src="{{ asset('uploads/img/')}}{{ articlesblock5big.image }}" class="attachment-colorcontentblock5 " alt="" /></a>
+        </a></div>
+    {% for article in  articlesblock3 %}
+    <div id="colorcontentwrap3">
+        <h2><a href="article/{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h2>
 
-        <p>{{ articlesblock5big.contenu|striptags[:150]|raw }}&nbsp;<a href='#'>more  ...</a></p>
+        <a href="#">
+        {% if article.image != '' %}
+            <img width="173" height="137" src="{{ asset('uploads/img/')}}{{ article.image }}" class="attachment-colorcontentblock3 " alt="" />
+        {% endif %}
+        </a>
+        <p>{{ article.contenu|striptags[:150]|raw }}  <a href='article/{{ article.titre }}'>Lire la suite...</a></p>
         <div class="cb"></div>
     </div>
-    {% for article in articlesblock5 %}
-    <div id="colorcontentwrap5">
-        <h3><a href="article/{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h3>
-        <div class="cb"></div>
-    </div>
-    {%  endfor %}
+    {% endfor %}
 </div>
