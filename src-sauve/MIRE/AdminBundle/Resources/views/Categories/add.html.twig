@@ -1,0 +1,63 @@
+{% extends 'baseadmin.html.twig' %}
+ {% block rigth_content %}
+     <h2>Formulaire categorie</h2>
+     <div class="well">
+         {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+         {# Les erreurs générales du formulaire. #}
+         {{ form_errors(form) }}
+
+         <div class="form-group">
+             {# Génération du label. #}
+             {{ form_label(form.nom, "Nom du catégorie", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+             {# Affichage des erreurs pour ce champ précis. #}
+             {{ form_errors(form.nom) }}
+
+             <div class="col-sm-4">
+                 {# Génération de l'input. #}
+                 {{ form_widget(form.nom, {'attr': {'class': 'form-control'}}) }}
+             </div>
+         </div>
+         <br/>
+
+         <div class="form-group">
+             {# Génération du label. #}
+             {{ form_label(form.place, "Place du categorie dans le bloc", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+             {# Affichage des erreurs pour ce champ précis. #}
+             {{ form_errors(form.place) }}
+
+             <div class="col-sm-4">
+                 {# Génération de l'input. #}
+                 {{ form_widget(form.place, {'attr': {'class': 'form-control'}}) }}
+             </div>
+         </div>
+         <br/>
+
+         <div class="form-group">
+             {# Génération du label. #}
+             {{ form_label(form.ordre, "Ordre du categorie", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+             {# Affichage des erreurs pour ce champ précis. #}
+             {{ form_errors(form.ordre) }}
+
+             <div class="col-sm-4">
+                 {# Génération de l'input. #}
+                 {{ form_widget(form.ordre, {'attr': {'class': 'form-control'}}) }}
+             </div>
+         </div>
+         <br/>
+         <br/>
+         <br/>
+         {# Pour le bouton, pas de label ni d'erreur, on affiche juste le widget #}
+         {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
+
+         {# Génération automatique des champs pas encore écrits.
+            Dans cet exemple, ce serait le champ CSRF (géré automatiquement par Symfony !)
+            et tous les champs cachés (type « hidden »). #}
+         {{ form_rest(form) }}
+
+         {# Fermeture de la balise <form> du formulaire HTML #}
+         {{ form_end(form) }}
+     </div>
+ {% endblock %}

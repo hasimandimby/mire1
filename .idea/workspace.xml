@@ -2,32 +2,366 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14fd2774-e5cf-420c-ba2e-8b06ccafa662" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/blockalaune.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/blocklistealaune.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/blockslider.html.twig" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/apple-touch-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/arrow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/botleft.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/botright.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/bt_blue_center.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/bt_blue_left.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/bt_blue_r.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/bt_green_center.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/bt_green_left.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/bt_green_r.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/bt_red_center.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/bt_red_left.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/bt_red_r.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/bubble.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/buttonn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/buttony.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/comment.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/error.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/footer_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/green_bt.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/green_bt_a.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/help.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/indeziner_logo.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/info.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/left.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/list_bullet.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/login_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/logo.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/menu_bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/menu_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/menu_bg_a.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/minus.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/notice.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/photo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/plus.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/red_bt.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/red_bt_a.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/right.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/sidebar_box_bottom.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/sidebar_box_top.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/sidebar_menu_top.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/sidebar_menu_top_a.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/trash.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/user_edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/user_logout.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/valid.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/images/warning.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/button-left.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/button-left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/button-right.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/button-right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/button.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/checkbox.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/checkbox.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/file.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/file.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/input-left.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/input-left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/input-right.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/input-right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/input.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/input.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/radio.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/radio.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/select-left.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/select-left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/select-right.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/select-right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/textarea-bl.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/textarea-bl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/textarea-br.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/textarea-br.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/textarea-l-off.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/textarea-l-off.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/textarea-l-over.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/textarea-r-off.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/textarea-r-off.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/textarea-r-over.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/textarea-tl.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/textarea-tl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/textarea-tr.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/img/textarea-tr.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/framework/images/blue_picto_less.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/framework/images/blue_picto_more.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/framework/images/grey_magnifier.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/framework/images/logo_symfony.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/10906480_435689589918770_4267481183726858840_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/11822504_917881978258118_3609850661414236466_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/11949506_10205365160192001_7031334291792389678_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/12316646_929901370413204_5711704264407420672_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/12794506_900709760028197_4940236455665850515_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/13103259_151385668595979_2567098195911741292_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/13466509_641382816029182_7983077231018819799_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/5-things-I-love-about-Manila-210x146.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/A-Lesson-From-the-Worlds-Richest-People-173x137.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Are-Entrepreneurs-Born-or-Taught-173x75.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Bank-Of-America-146x85.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/California-Deploys-Wasps-Scientists-Highlight-More-Green-Alternatives-To-Pesticides-205x120.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Carbon-Capture-Project-By-American-Electric-Power-Co.-Put-On-Hold-205x120.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Chev_Equinox_Life_Video_Airplane_300x250.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Egyptians-extend-protest-say-army-not-doing-enough-220x146.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Emmys-2011-Nomination-Snubs-Surprises-205x120.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Going-After-Michele-Bachmann-Ahead-Of-2012-Has-Its-Risks-384x217.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Goldman-Sachs-146x85.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Kendall-Jenner-Splashes-Around-on-the-4th-of-July2-435x580-298x295.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/LDM-Logo-def.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Marco-Simoncelli-topped-the-times-in-the-second-practice-German-Grand-Prix-150x125.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Marco-Simoncelli-topped-the-times-in-the-second-practice-German-Grand-Prix-298x295.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Maseratis-and-Ferraris-Like-Italian-Pastries-220x288.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/My-Emmy-Reactions-Some-Joy-Some-Confusion-and-the-Happy-Dance-List-205x120.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Obama-Administration-And-Wildlife-Advocates-Strike-Deal-On-Endangered-Species-Act-Protections-205x120.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Pawlenty-Draws-Attention-With-Debt-Ceiling-Rhetoric-216x125.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/President-Obama-and-Dalai-Lama-418x215.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Republicans-target-Raleigh-Democrat-Brad-Miller-for-his-work-on-financial-reform-216x125.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Rescue-Me-Items-Head-to-Smithsonian-Callie-Thorne-Talks-Final-Season-205x120.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Roger-Federers-Switzerland-face-a-long-trip-to-Australia-in-Septembers-Davis-Cup-play-offs-220x146.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Rupert-Murdoch-55x45.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/SITE-MAQUETTE_01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/SITE-MAQUETTE_02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/SITE-MAQUETTE_04.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/SITE-MAQUETTE_05.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/SITE-MAQUETTE_06.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/SITE-MAQUETTE_08.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/SITE-MAQUETTE_09.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Slow-roasted-sturgeon-at-Wexlers-Lacy-Atkins-The-San-Francisco-Chronicle-2009-320x190.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Taylor-Swift-teen-vogue-298x295.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Tea-Party-Polls-Show-Importance-To-GOP-Base-216x125.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/The-Importance-Of-Scooping-Your-Dogs-Poo-205x120.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Transformer-3-Dark-of-the-Moon-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Why-Japanese-bartenders-are-the-worlds-best-150x125.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Why-Japanese-bartenders-are-the-worlds-best-298x295.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Yankee-Stadium-146x85.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/Yellowstone-River-Exxon-To-Drain-Oil-From-Failed-Pipeline-205x120.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/delhi-belly-movie-poster-150x125.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/delicious.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/economy.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/facebook(1).png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/floyd-money-mayweather-415x301-1-210x146.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/friendfeed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/globalwarming-320x190.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/globalwarming-418x215.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/google.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/grostitre.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/jessica-alba-298x295.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/kim-kardashian-covers-august-cosmopolitan-298x295.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/logo-az.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/logo-lignemire.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/logo-traitra.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/myspace.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/netflix-store-210x146.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/next.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/prev.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/pub-07.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/pub.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/pub.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/reddit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/social/digg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/social/email.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/social/facebook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/social/flickr.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/social/headlines.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/social/lastfm.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/social/linkedin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/social/rss.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/social/stumbleupon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/social/twitter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/sony-ebook-300x250.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/sous.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/sprint.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/stumbleupon(1).png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/subscribe_rss.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/technorati.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/transformers-dark-of-the-moon-movie-poster-298x295.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/transformers-dark-of-the-moon-movie-poster.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/watermelon_slice-150x125.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/watermelon_slice-298x295.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/2-5-150x144.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/AREMA-300x300.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/Air-Mauritius-300x300.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/Avaradoha-200x200.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/BDR-1-300x300.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/CNAPS-300x300.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/Eliane-300x300.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/FJKM-300x300.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/Foncier-300x300.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/GALLIENI-200x200.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/GIROFLE-300x276.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/GREFFIER-300x300.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/Hajo-1-300x300.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/JEUX-OLYMPIQUES-300x300.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/Kenya-airways-300x300.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/LALATINA-200x200.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/LAURENT-copy-300x245.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/Population-5-300x300.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/RABERANTO-5-copy-300x181.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/Ralissy-1-300x300.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/Sakoroka-1-300x300.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/Star-200x200.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/TAXI-BROUSSE-200x200.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/THB-1-200x200.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/TIKO-300x300.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/Turbo-5-200x200 (1).gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/aphteuse-300x245.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/concours-photo-300x300.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/football-300x300.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/maty-300x300.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/uploads/img/une-2-300x251.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/AppBundle/AppBundle.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/AppBundle/Controller/DefaultController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Controller/AbonemtController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Controller/ArticleController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Controller/AuteurController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Controller/CategoriesController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Controller/ClientController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Controller/DefaultController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Controller/ImageController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Controller/LogController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Controller/PageController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Controller/PdfController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Controller/SecurityController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/DataFixtures/ORM/LoadCategories.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Entity/Abonemt.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Entity/Article.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Entity/Auteur.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Entity/Categories.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Entity/Client.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Entity/Log.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Entity/Page.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Entity/Pdf.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Form/ArticleType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Form/AuteurType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Form/CategoriesType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Form/PageType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Form/PdfType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/MIREAdminBundle.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Repository/AbonemtRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Repository/ArticleRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Repository/AuteurRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Repository/CategoriesRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Repository/ClientRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Repository/ImageRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Repository/LogRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Repository/PageRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Repository/PdfRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/config/routing.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/config/services.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Abonemt/add.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Abonemt/delete.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Abonemt/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Abonemt/update.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Article/add.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Article/delete.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Article/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Article/liste.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Article/update.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Auteur/add.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Auteur/delete.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Auteur/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Auteur/liste.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Auteur/update.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Categories/add.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Categories/delete.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Categories/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Categories/liste.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Categories/update.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Client/add.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Client/delete.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Client/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Client/update.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Default/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Image/add.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Image/delete.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Image/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Image/update.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Page/add.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Page/delete.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Page/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Page/update.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Pdf/add.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Pdf/delete.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Pdf/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/Pdf/update.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/base.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/AdminBundle/Resources/views/security/login.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Controller/ArticleController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Controller/CategorieController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Controller/ContactController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Controller/DefaultController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Controller/InscriptionController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Controller/PageController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Form/AbonemtType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Form/ClientType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/MIREFrontBundle.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/config/routing.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/config/services.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/Default/block1.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/Default/block10.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/Default/block2.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/Default/block3.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/Default/block4.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/Default/block5.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/Default/block6.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/Default/block7.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/Default/block8.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/Default/block9.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/Default/blockalaune.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/Default/blockfilinfo.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/Default/blocklistealaune.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/Default/blockmenu.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/Default/blockslider.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/Default/gachette.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/Default/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/Default/proweekend.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/Default/pubimage2.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/Default/service.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/Default/sidebar.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/article/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/categorie/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/contact/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/inscription/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/inscription/suite.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src-sauve/MIRE/FrontBundle/Resources/views/page/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/app.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/app_dev.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/css/niceforms-default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/js/clockh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/js/clockp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/js/ddaccordion.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/js/jconfirmaction.jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/js/jquery-1.4.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/admin/js/niceforms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/framework/css/body.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/framework/css/exception.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/framework/css/structure.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/css/responsives.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/css/style-.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/images/challenge" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/scripts/html5shiv.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/scripts/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/scripts/scripts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/scripts/slides.min.jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/front/scripts/ticker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/bundles/mysql/ligne_de_mire.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-sauve/robots.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/basefront.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/basefront.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/AdminBundle/Repository/ArticleRepository.php" afterPath="$PROJECT_DIR$/src/MIRE/AdminBundle/Repository/ArticleRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Controller/ArticleController.php" afterPath="$PROJECT_DIR$/src/MIRE/FrontBundle/Controller/ArticleController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Controller/CategorieController.php" afterPath="$PROJECT_DIR$/src/MIRE/FrontBundle/Controller/CategorieController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/MIRE/FrontBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block10.html.twig" afterPath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block10.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block11.html.twig" afterPath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block11.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block12.html.twig" afterPath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block12.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block2.html.twig" afterPath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block2.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block3.html.twig" afterPath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block3.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block4.html.twig" afterPath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block4.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block5.html.twig" afterPath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block5.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block6.html.twig" afterPath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block6.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block7.html.twig" afterPath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block7.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block8.html.twig" afterPath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block8.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block9.html.twig" afterPath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block9.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/blockfilinfo.html.twig" afterPath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/blockfilinfo.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/blockmenu.html.twig" afterPath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/blockmenu.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/article/index.html.twig" afterPath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/article/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/categorie/index.html.twig" afterPath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/categorie/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block1.html.twig" afterPath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block1.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/proweekend.html.twig" afterPath="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/proweekend.html.twig" />
     </list>
     <ignored path="mire.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,11 +400,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MIRE/FrontBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="164" column="118" selection-start-line="164" selection-start-column="118" selection-end-line="164" selection-end-column="118" />
+            <state relative-caret-position="527">
+              <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -86,21 +420,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="proweekend.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="proweekend.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/proweekend.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Article.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MIRE/AdminBundle/Entity/Article.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="105" column="19" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="19" />
+            <state relative-caret-position="184">
+              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -112,6 +436,18 @@
             <state relative-caret-position="68">
               <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="block1.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block1.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#h2#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,8 +475,8 @@
       <file leaf-file-name="block8.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block8.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -200,7 +536,6 @@
         <option value="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block10.html.twig" />
         <option value="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block12.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/basefront.html.twig" />
-        <option value="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block1.html.twig" />
         <option value="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block2.html.twig" />
         <option value="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/MIRE/AdminBundle/Repository/ArticleRepository.php" />
@@ -210,14 +545,15 @@
         <option value="$PROJECT_DIR$/src/MIRE/FrontBundle/Controller/CategorieController.php" />
         <option value="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/categorie/index.html.twig" />
         <option value="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/article/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/MIRE/FrontBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/blockfilinfo.html.twig" />
         <option value="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block13.html.twig" />
         <option value="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block7.html.twig" />
         <option value="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block8.html.twig" />
         <option value="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block9.html.twig" />
         <option value="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block6.html.twig" />
+        <option value="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block1.html.twig" />
         <option value="$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/proweekend.html.twig" />
+        <option value="$PROJECT_DIR$/src/MIRE/FrontBundle/Controller/DefaultController.php" />
       </list>
     </option>
   </component>
@@ -764,7 +1100,7 @@
       <workItem from="1471894838177" duration="2561000" />
       <workItem from="1471937093503" duration="5136000" />
       <workItem from="1471954870740" duration="2514000" />
-      <workItem from="1471957608345" duration="11668000" />
+      <workItem from="1471957608345" duration="13375000" />
     </task>
     <task id="LOCAL-00001" summary="template  and security">
       <created>1469722835112</created>
@@ -990,11 +1326,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471954937374</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="niova toerana">
+      <created>1471969590514</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1471969590514</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222596000" />
+    <option name="totallyTimeSpent" value="224303000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1009,7 +1352,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29062957" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29062957" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.49092284" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35748032" sideWeight="0.58491945" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24054463" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1211,6 +1554,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="14" column="138" selection-start-line="14" selection-start-column="138" selection-end-line="14" selection-end-column="138" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1243,16 +1587,6 @@
         <state relative-caret-position="221">
           <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block1.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1341,7 +1675,7 @@
         <state relative-caret-position="170">
           <caret line="16" column="20" selection-start-line="15" selection-start-column="7" selection-end-line="17" selection-end-column="97" />
           <folding>
-            <element signature="e#46#85#0#PHP" expanded="true" />
+            <element signature="e#46#85#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1351,7 +1685,7 @@
         <state relative-caret-position="218">
           <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
           <folding>
-            <element signature="e#46#85#0#PHP" expanded="true" />
+            <element signature="e#46#85#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1380,14 +1714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MIRE/FrontBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="164" column="118" selection-start-line="164" selection-start-column="118" selection-end-line="164" selection-end-column="118" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/blockfilinfo.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1400,14 +1726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block8.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1436,10 +1754,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block1.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#h2#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/proweekend.html.twig">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MIRE/FrontBundle/Resources/views/Default/block8.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MIRE/FrontBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
           <folding />
         </state>
       </provider>

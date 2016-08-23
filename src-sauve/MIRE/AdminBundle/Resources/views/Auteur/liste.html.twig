@@ -1,0 +1,39 @@
+{% extends 'baseadmin.html.twig' %}
+
+ {% block rigth_content %}
+<h2>Listes des auteurs du journal Ligne de Mire</h2>
+     <table id="rounded-corner" summary="2007 Major IT Companies' Profit">
+         <thead>
+         <tr>
+             <th scope="col" class="rounded-company">Publier</th>
+             <th scope="col" class="rounded">Nom</th>
+             <th scope="col" class="rounded">Prénom</th>
+             <th scope="col" class="rounded">Email</th>
+             <th scope="col" class="rounded">Edit</th>
+             <th scope="col" class="rounded-q4">Delete</th>
+         </tr>
+         </thead>
+         <tfoot>
+         <tr>
+             <td colspan="6" class="rounded-foot-left"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</em></td>
+             <td class="rounded-foot-right">&nbsp;</td>
+
+         </tr>
+         </tfoot>
+         <tbody>
+         {% for aut in auteur %}
+             <tr>
+                 <td><input type="checkbox" name=""></td>
+                 <td>{{ aut.nom }}</td>
+                 <td>{{ aut.prenom}}</td>
+                 <td>{{ aut.email}}</td>
+                 <td><a href="{{ path('mire_auteur_update', {'id': aut.id }) }}"><img src="{{ asset('bundles/admin/images/user_edit.png')}}" alt="" title="" border="0"></a></td>
+                 <td><a href="{{ path('mire_auteur_delete', {'id': aut.id }) }}" class="ask"><img src="{{ asset('bundles/admin/images/trash.png')}}" alt="" title="" border="0"></a></td>
+             </tr>
+         {% endfor %}
+
+         </tbody>
+     </table>
+     <a  href="{{ path('mire_auteur_add') }}"  class="bt_green"><span class="bt_green_lft"></span><strong>Ajouter un Article</strong><span class="bt_green_r"></span></a>
+
+ {% endblock %}

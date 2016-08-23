@@ -1,0 +1,31 @@
+mire_front_homepage:
+    path:     /
+    defaults: { _controller: MIREFrontBundle:Default:index }
+
+mire_front_article:
+    path:     /article/{titre}
+    defaults: { _controller: MIREFrontBundle:Article:index,titre:titre }
+
+mire_front_contact:
+    path:     /contact
+    defaults: { _controller: MIREFrontBundle:Contact:index }
+
+mire_front_categorie:
+    path:     /categorie
+    defaults: { _controller: MIREFrontBundle:Categorie:index }
+
+mire_front_inscription:
+    path:     /inscription
+    defaults: { _controller: MIREFrontBundle:Inscription:index }
+
+mire_front_inscription_suite:
+    path:     /inscription/suite
+    defaults: { _controller: MIREFrontBundle:Inscription:suite }
+
+mire_front_authentification:
+    path:     /inscription/authentification
+    defaults: { _controller: MIREFrontBundle:Inscription:connexion }
+
+mire_front_page:
+    path:     /article
+    defaults: { _controller: MIREFrontBundle:Page:index }

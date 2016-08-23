@@ -3,23 +3,13 @@
 </div>
 <div class="tabs">
     <ul class="tabs">
-        <li><a href="#culture">Culture</a></li>
-        <li><a href="#sport">Sport</a></li>
+        {% for pro in articlesblock13 %}
+        <li><a href="#{{ pro.motcle|striptags }}">{{ pro.motcle|striptags }}</a></li>
+        {% endfor %}
     </ul>
-    <div class="tab_content" id="culture">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur diam elit.</p>
-        <p>Curabitur tincidunt, est viverra bibendum volutpat, mauris metus dapibus tortor, sit amet imperdiet metus libero non sem. Fusce quis leo quis nisi lacinia posuere vitae at elit. </p>
-        <p>Donec vehicula felis lorem, accumsan dignissim neque lacinia vitae. </p>
-        <p>Suspendisse a nunc eu nisl posuere sagittis. Integer rhoncus, ligula vitae porta eleifend, ex lectus maximus enim, ac blandit ex arcu non urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
-        <p>Aenean sed tellus at turpis convallis condimentum. Nullam eu euismod justo. </p>
-        <p>Donec dignissim ut elit ac posuere. Phasellus semper erat nulla, quis placerat quam mattis nec. Pellentesque vitae ornare lectus.</p>
-
+    {% for pro in articlesblock13 %}
+    <div class="tab_content" id="{{ pro.motcle|striptags }}">
+        {{ pro.contenu|striptags[:200]|raw }}
     </div>
-    <div class="tab_content" id="sport">
-        <p>Pellentesque facilisis, mauris sed lacinia maximus, elit justo semper ligula, a pulvinar dolor diam gravida arcu. Cras vitae erat interdum, tempus nulla ac, dignissim ligula. Mauris feugiat velit tortor, et pellentesque odio fermentum eu. </p>
-        <p>Aliquam eget placerat lacus. Fusce non lorem quis purus vehicula suscipit. </p>
-        <p>Donec eleifend enim non urna sollicitudin, at egestas arcu molestie.</p>
-        <p> Fusce gravida velit quis purus elementum tempor. Donec eu sagittis purus, a dapibus nibh. Phasellus in egestas augue. Vivamus vel lectus pulvinar, fermentum enim at, iaculis odio. </p>
-        <p>In pretium neque justo, at pulvinar justo tincidunt et.</p>
-    </div>
+    {% endfor %}
 </div>

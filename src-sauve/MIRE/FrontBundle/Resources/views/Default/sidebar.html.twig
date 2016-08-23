@@ -1,0 +1,32 @@
+<div id="sidebar">
+    {{ render(controller("MIREFrontBundle:default:proweekend")) }}
+    {{ render(controller("MIREFrontBundle:default:pubimage2")) }}
+    {{ render(controller("MIREFrontBundle:default:service")) }}
+
+
+    <div id="contactBlock">
+        <h2><a href="#" title="" id="title">Tarif publicitaires</a></h2>
+        <div class="bockcontent">
+            La ligne de mire <br/>
+            Triatra
+        </div>
+        <div class="bockcontent app">
+            telecharge <br/>
+            application laligne de mire
+        </div>
+    </div>
+    <div id="contactBlock">
+        <h2><a href="#" title="" id="title">Média</a></h2>
+        <div class="bockcontent parts">
+            <div class="partner">
+                <span>Livres journaux</span>
+                <a href="#"><img src="{{ asset('bundles/front/images/logo-lignemire.jpg')}}" alt=""/></a>
+                <a href="#"><img src="{{ asset('bundles/front/images/logo-traitra.jpg')}}" alt=""/></a>
+            </div>
+            <div class="partner">
+                <span>Radio et Tv en ligne</span>
+                <a href="#"><img src="{{ asset('bundles/front/images/logo-az.jpg')}}" alt=""/></a>
+            </div>
+        </div>
+    </div>
+</div>

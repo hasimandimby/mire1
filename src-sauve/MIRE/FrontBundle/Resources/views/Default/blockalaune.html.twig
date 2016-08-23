@@ -1,0 +1,16 @@
+<div class="featbig">
+    <h2 style="min-height:58px;"><a href="#" title="">{{ article.titre }}</a></h2>
+    <a href="#" title=""><img src="{{ asset('uploads/img/')}}{{ article.image }}" alt="" width="418" height="" /></a>
+
+    <p>WASHINGTON &#8212; President Barack Obama held a White House meeting Saturday with the Dalai Lama, a fellow Nobel Peace laureate, hours after China called on the U.S. to rescind an invitation that could&nbsp;</p>
+    <div id="featbig-author">by <a href="#" title="">Matt</a> | Published 5 years ago</div>
+        <div id="featsmall">
+            {%
+            for art in listearticle
+
+            %}
+        <h2><a href="#" title="">{{ art.titre }}</a></h2>
+            {% endfor %}
+    </div>
+    <div class="cb"></div>
+</div>

@@ -104,7 +104,7 @@ class DefaultController extends Controller
         $categorieblock8 = $em->getRepository("MIREAdminBundle:Categories")->findBy(array("place"=>8));
         $articlesblock8big = new Article();
         if(count($articlesblock8) > 0)
-        $articlesblock6big = $em->getRepository("MIREAdminBundle:Article")->findByPlaceLast(8);
+            $articlesblock8big = $em->getRepository("MIREAdminBundle:Article")->findByPlaceLast(8);
         return $this->render('MIREFrontBundle:Default:block8.html.twig',array('categorieblock8' => $categorieblock8 ,'articlesblock8big' => $articlesblock8big ,'articlesblock8' => $articlesblock8));
     }
     public function block9Action()

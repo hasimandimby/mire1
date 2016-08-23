@@ -2,8 +2,8 @@
     <h2 style="min-height:58px;"><a href="#" title="">{{ article.titre }}</a></h2>
     <a href="#" title=""><img src="{{ asset('uploads/img/')}}{{ article.image }}" alt="" width="418" height="" /></a>
 
-    {{ article.contenu[:750]|raw }}</p>
-    <div id="featbig-author">by <a href="#" title="">Matt</a> | Published 5 years ago</div>
+    {{ article.contenu|striptags[:450]|raw }}</p>
+    <div id="featbig-author">by <a href="#" title="">{{ article.auteur.nom }}</a> | Published 5 years ago</div>
         <div id="featsmall">
             {%
             for art in listearticle

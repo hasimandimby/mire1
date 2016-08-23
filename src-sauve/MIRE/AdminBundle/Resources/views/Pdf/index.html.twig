@@ -1,0 +1,34 @@
+{% extends 'baseadmin.html.twig' %}
+ {% block rigth_content %}
+
+     <table id="rounded-corner" summary="2007 Major IT Companies' Profit">
+         <thead>
+         <tr>
+             <th scope="col" class="rounded-company">Date</th>
+             <th scope="col" class="rounded">fichier</th>
+             <th scope="col" class="rounded">modifier</th>
+             <th scope="col" class="rounded-q4">suprimer</th>
+         </tr>
+         </thead>
+         <tfoot>
+         <tr>
+             <td colspan="6" class="rounded-foot-left"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</em></td>
+             <td class="rounded-foot-right">&nbsp;</td>
+
+         </tr>
+         </tfoot>
+         <tbody>
+         {% for pdf in listepdf %}
+             <tr>
+                 <td><a href="{{  asset('uploads/pdf/') }}{{ pdf.nom }}">{{ pdf.nom }}</a></td>
+                 <td>{{ pdf.datePublication }}</td>
+                 <td><a href="{{ path('mire_pdf_update', {'id': pdf.id }) }}"><img src="{{ asset('bundles/admin/images/user_edit.png')}}" alt="" title="" border="0"></a></td>
+                 <td><a href="{{ path('mire_pdf_delete', {'id': pdf.id }) }}" class="ask"><img src="{{ asset('bundles/admin/images/trash.png')}}" alt="" title="" border="0"></a></td>
+             </tr>
+         {% endfor %}
+
+         </tbody>
+     </table>
+     <a  href="{{ path('mire_pdf_add') }}"  class="bt_green"><span class="bt_green_lft"></span><strong>Ajouter un pdf</strong><span class="bt_green_r"></span></a>
+
+ {% endblock %}
