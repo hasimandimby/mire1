@@ -41,13 +41,15 @@
                         <li style="margin-left:9px;"><a href="#"><img src="{{ asset('bundles/front') }}/images/subscribe_rss.png" alt="" border="0"></a></li>
                     </ul> </div>
                 <div class="ptags"><span class="ptags_heading">TAGS</span>
-                    <div style="margin-top:5px;text-align:center;"><a> {{ article.motcle|raw }} </a></div>
+                    <div style="margin-top:5px;text-align:center;"><a> {{ article.motcle|striptags[:150]|raw }} </a></div>
                 </div>
             </div>
             <br />
             <img src="{{ asset('uploads/img/') }}{{ article.image }}" alt="" border="0">
-            {{ article.contenu[:2000]|raw }}...<br />
-            <a class="linkbutton" href="{{ path('mire_front_inscription') }}">abonnez vous </a>
+            {{ article.contenu|truncate(750, true, '...')|raw }}</p><br />
+
+            <a  href="{{ path('mire_front_inscription') }}" style="padding: 10px;
+    text-align: center;background-color: #FF0000;margin: auto;color: #000000;font-weight: bold ">abonnez vous </a>
 
 
         </div>
@@ -62,29 +64,8 @@
             <div class="relatedpost">
 
                 <a href="#"><img width="150" height="125" src="{{ asset('uploads/img/') }}{{ art.image }}" class="attachment-relatedimg wp-post-image" alt=""></a>
-
-
-
-
-
-
-
                 <h3><a href="/article/{{ art.titre }}" rel="bookmark" title="{{ art.titre }}">{{ art.titre }}</a></h3>
-
-
-
-
-
-
-
             </div>
-
-
-
-
-
-
-
         </div>
       {% endfor %}
      <div class="cb"></div>
