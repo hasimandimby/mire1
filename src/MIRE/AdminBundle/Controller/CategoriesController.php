@@ -20,6 +20,18 @@ class CategoriesController extends Controller
     {
         $em = $this->getDoctrine()->getEntityManager();
         $categories = $em->getRepository("MIREAdminBundle:Categories")->findAll();
+        return $this->render('MIREAdminBundle:Categories:attente.html.twig',array('categories' => $categories));
+    }
+    public function attenteAction()
+    {
+        $em = $this->getDoctrine()->getEntityManager();
+        $categories = $em->getRepository("MIREAdminBundle:Categories")->findAll();
+        return $this->render('MIREAdminBundle:Categories:abonnee.html.twig',array('categories' => $categories));
+    }
+    public function abonneeAction()
+    {
+        $em = $this->getDoctrine()->getEntityManager();
+        $categories = $em->getRepository("MIREAdminBundle:Categories")->findAll();
         return $this->render('MIREAdminBundle:Categories:index.html.twig',array('categories' => $categories));
     }
     public function addAction(Request $request)

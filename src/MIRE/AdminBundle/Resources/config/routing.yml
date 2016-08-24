@@ -37,9 +37,15 @@ mire_categories_delete:
 mire_client_add:
     path:     /client/add
     defaults: { _controller: MIREAdminBundle:Client:add }
-mire_client_edit:
-    path:     /client/index
+mire_client_liste:
+    path:     /client/
     defaults: { _controller: MIREAdminBundle:Client:index }
+mire_client_attente:
+    path:     /client/attente
+    defaults: { _controller: MIREAdminBundle:Client:attente }
+mire_client_abonnee:
+    path:     /client/abonnee
+    defaults: { _controller: MIREAdminBundle:Client:abonnee }
 mire_client_update:
     path:      /client/update/{id}
     defaults:  { _controller: MIREAdminBundle:Client:update, id: id  }

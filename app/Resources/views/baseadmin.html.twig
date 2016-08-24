@@ -106,7 +106,9 @@
                     <a class="menuitem submenuheader" href="" >Gestion abonnement</a>
                     <div class="submenu">
                         <ul>
-                            <li><a href="#">Liste</a></li>
+                            <li><a href="{{ path('mire_client_liste')}}">Liste inscrits</a></li>
+                            <li><a href="{{ path('mire_client_attente')}}">Liste en attente de validation </a></li>
+                            <li><a href="{{ path('mire_client_abonnee')}}">Liste abonné</a></li>
                         </ul>
                     </div>
     

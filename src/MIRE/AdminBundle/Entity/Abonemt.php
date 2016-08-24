@@ -42,12 +42,33 @@ class Abonemt
      */
     private $dateFin;
 
+    /*
+     * @var string 
+     * @ORM\Column(name="valider", type="string",length=10,nullable=true)
+     */
+    private $valider;
 
+    /**
+     * @return mixed
+     */
+    public function getValider()
+    {
+        return $this->valider;
+    }
+
+    /**
+     * @param mixed $valider
+     */
+    public function setValider($valider)
+    {
+        $this->valider = $valider;
+    }
     /**
      * Get id
      *
      * @return int
      */
+    
     public function getId()
     {
         return $this->id;

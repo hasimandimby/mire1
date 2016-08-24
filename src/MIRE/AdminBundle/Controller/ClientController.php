@@ -15,7 +15,21 @@ class ClientController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('MIREAdminBundle:Client:index.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $listeclients = $em->getRepository('MIREAdminBundle:Client')->findAll();
+        return $this->render('MIREAdminBundle:Client:index.html.twig',array('listeclients' =>$listeclients));
+    }
+    public function attenteAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $listeclients = $em->getRepository('MIREAdminBundle:Client')->findAll();
+        return $this->render('MIREAdminBundle:Client:index.html.twig',array('listeclients' =>$listeclients));
+    }
+    public function abonneeAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $listeclients = $em->getRepository('MIREAdminBundle:Client')->findAll();
+        return $this->render('MIREAdminBundle:Client:index.html.twig',array('listeclients' =>$listeclients));
     }
     public function addAction()
     {
