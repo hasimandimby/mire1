@@ -22,15 +22,15 @@ class Categories
     private $id;
 
     /**
-     * @var string
+     * @var int
      *
-     * @ORM\Column(name="ordre", type="string", length=255,nullable=true)
+     * @ORM\Column(name="ordre", type="integer", length=255,nullable=true)
      */
     private $ordre;
     /**
-     * @var string
+     * @var int
      *
-     * @ORM\Column(name="place", type="string", length=255,nullable=true)
+     * @ORM\Column(name="place", type="integer", length=255,nullable=true)
      */
     private $place;
 

@@ -1,12 +1,13 @@
 <ul>
     <div class="menu-header">
         <ul id="menu-menu" class="menu">
+
             {% for categorie in categories %}
                 {% if(categorie.ordre != 0) %}
                          <li><a href="/categorie/{{ categorie.nom }}" title="">{{ categorie.nom }}</a></li>
                   {% endif %}
             {% endfor %}
-
+<li></li>
         </ul>
         <div class="cb"></div>
     </div>

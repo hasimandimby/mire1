@@ -46,7 +46,7 @@ class DefaultController extends Controller
     public function menuAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $categories = $em->getRepository("MIREAdminBundle:Categories")->findAll();
+        $categories = $em->getRepository("MIREAdminBundle:Categories")->findBy([], ['ordre' => 'ASC']);
 
         return $this->render('MIREFrontBundle:Default:blockmenu.html.twig',array('categories' => $categories));
     }
@@ -63,7 +63,7 @@ class DefaultController extends Controller
     public function block4Action()
     {
         $em = $this->getDoctrine()->getEntityManager();
-        $articlesblock4 = $em->getRepository("MIREAdminBundle:Article")->findByPlace(4);
+        $articlesblock4 = $em->getRepository("MIREAdminBundle:Article")->findByPlace(4,1);
         $categorieblock4 = $em->getRepository("MIREAdminBundle:Categories")->findBy(array("place"=>4));
         $articlesblock4big = new Article();
         if(count($articlesblock4) > 0)
@@ -73,7 +73,7 @@ class DefaultController extends Controller
     public function block5Action()
     {
         $em = $this->getDoctrine()->getEntityManager();
-        $articlesblock5 = $em->getRepository("MIREAdminBundle:Article")->findByPlace(5);
+        $articlesblock5 = $em->getRepository("MIREAdminBundle:Article")->findByPlace(5,1);
         $categorieblock5 = $em->getRepository("MIREAdminBundle:Categories")->findBy(array("place"=>5));
         return $this->render('MIREFrontBundle:Default:block5.html.twig',array('categorieblock5' => $categorieblock5 ,'articlesblock5' => $articlesblock5 , ));
     } 

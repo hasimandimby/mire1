@@ -24,11 +24,11 @@ class ArticleRepository extends \Doctrine\ORM\EntityRepository
         return $query->setMaxResults(1)->getSingleResult();
     }
 
-    public function findByPlace($place_num)
+    public function findByPlace($place_num,$limit = 3)
     {
         $query  = $this->_em->createQuery('SELECT a FROM MIRE\AdminBundle\Entity\Article a JOIN a.categories c WHERE c.place = :place  ORDER BY a.id DESC');
         $query->setParameter('place',$place_num);
-        return $query->setMaxResults(3)->getResult();
+        return $query->setMaxResults($limit)->getResult();
     }
     public function findByPlaceLast($place_num)
     {

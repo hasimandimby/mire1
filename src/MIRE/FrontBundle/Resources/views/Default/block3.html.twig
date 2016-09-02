@@ -11,10 +11,10 @@
         <h3><a href="article/{{ article.titre }}" rel="bookmark">{{ article.titre }}</a></h3>
 
 
-        <a href="#"><img width="146" height="85" src="{{ asset('uploads/img/')}}{{ article.image }}" class="attachment-colorcontentblock1 " alt="" /></a>
-        <p>
+        <a href="#" style="float:left;width:156px"><img width="146" height="100" src="{{ asset('uploads/img/')}}{{ article.image }}" class="attachment-colorcontentblock1 " alt="" /></a>
+        <p style="float:left;width:230px;">
 
-            {{ article.contenu[:600]|striptags}}
+            {{ article.contenu[:600]|striptags|raw}}
             <a href='article/{{ article.titre }}'>Lire la suite...</a></p>
         <div class="cb"></div>
     </div>
